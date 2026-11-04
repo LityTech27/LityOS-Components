@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "repo": "LityTech27/LityOS-Components",
+  "generatedAt": 1793798440114,
+  "stable": null,
+  "preview": {
+    "tag": "main-35dfbe5",
+    "title": "Pin LityOS release signer, publish CI to LityOS-Components [skip ci]",
+    "summary": "Replaces the pinned signer with a768efdb\u20261ff1. build.yml announce, update-catalog.yml and publish-packs.yml use secret LITYOSCOMPONENTSTOKEN against LityTech27/LityOS-Components (no GitHub App); sign.yml names assets LityOS-. Triggers unchanged. pr-release-publish.yml / pr-release-cleanup.yml left untouched (DroidDeck app and repos, package check com.droiddeck.launcher). docs/self-update.md u",
+    "commit": "35dfbe5f9d3bd03d8312cd6a0b14759804ca67b5",
+    "pr": 0,
+    "version": null,
+    "versionCode": 17,
+    "publishedAt": 1793798421000,
+    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-35dfbe5",
+    "apks": {
+      "lity.os": {
+        "name": "LityOS-main-35dfbe5.apk",
+        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-35dfbe5/LityOS-main-35dfbe5.apk",
+        "size": 70937781,
+        "sha256": "922a758dd84c9dc12b3db1685264139baee4bf48349164cb9f4beb0a45b6276b",
+        "packageName": "lity.os",
+        "versionCode": 17,
+        "signerSha256": "a768efdbe5be84fffc1bbc1b428ae2f0432ddaaf4d47ffa2cf896828a2b91ff1"
+      }
+    }
+  },
+  "recentPreviews": [
+    {
+      "commit": "35dfbe5f9d3bd03d8312cd6a0b14759804ca67b5",
+      "title": "Pin LityOS release signer, publish CI to LityOS-Components [skip ci]",
+      "summary": "Replaces the pinned signer with a768efdb\u20261ff1. build.yml announce, update-catalog.yml and publish-packs.yml use secret LITYOSCOMPONENTSTOKEN against LityTech27/LityOS-Components (no GitHub App); sign.yml names assets LityOS-. Triggers unchanged. pr-release-publish.yml / pr-release-cleanup.yml left untouched (DroidDeck app and repos, package check com.droiddeck.launcher). docs/self-update.md u",
+      "publishedAt": 1793798421000
+    }
+  ],
+  "tests": []
+}
