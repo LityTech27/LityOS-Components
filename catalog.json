@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "repo": "LityTech27/LityOS-Components",
-  "generatedAt": 1793798440114,
+  "generatedAt": 1793894923122,
   "stable": null,
   "preview": {
     "tag": "main-35dfbe5",
@@ -33,5 +33,7 @@
       "publishedAt": 1793798421000
     }
   ],
-  "tests": []
+  "tests": [],
+  "runtimeImage": null,
+  "drivers": []
 }
