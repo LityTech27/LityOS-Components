@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "repo": "LityTech27/LityOS-Components",
-  "generatedAt": 1793894923122,
+  "generatedAt": 1793897060398,
   "stable": null,
   "preview": {
     "tag": "main-35dfbe5",
@@ -35,5 +35,13 @@
   ],
   "tests": [],
   "runtimeImage": null,
-  "drivers": []
+  "drivers": [
+    {
+      "tag": "DD-Turnip-v0.3.4",
+      "release": "driver-turnip-v0.3.4",
+      "url": "https://github.com/LityTech27/LityOS-Components/releases/download/driver-turnip-v0.3.4/DD-Turnip-v0.3.4.zip",
+      "size": 5985055,
+      "sha256": "81db74cff1bf6568581cfd79203bec22f48856006aeac09e9e0a3eb3f9416fc1"
+    }
+  ]
 }
