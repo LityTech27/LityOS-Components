@@ -1,31 +1,37 @@
 {
   "schema": 1,
   "repo": "LityTech27/LityOS-Components",
-  "generatedAt": 1793947507845,
+  "generatedAt": 1793966344253,
   "stable": null,
   "preview": {
-    "tag": "main-35dfbe5",
-    "title": "Pin LityOS release signer, publish CI to LityOS-Components [skip ci]",
-    "summary": "Replaces the pinned signer with a768efdb\u20261ff1. build.yml announce, update-catalog.yml and publish-packs.yml use secret LITYOSCOMPONENTSTOKEN against LityTech27/LityOS-Components (no GitHub App); sign.yml names assets LityOS-. Triggers unchanged. pr-release-publish.yml / pr-release-cleanup.yml left untouched (DroidDeck app and repos, package check com.droiddeck.launcher). docs/self-update.md u",
-    "commit": "35dfbe5f9d3bd03d8312cd6a0b14759804ca67b5",
+    "tag": "main-72ec201",
+    "title": "Passe versionCode de 17 \u00e0 18",
+    "summary": "Incr\u00e9mente versionCode (17 \u2192 18) pour que la prochaine build sign\u00e9e soit strictement plus r\u00e9cente que main-35dfbe5. versionName reste 0.6.9.",
+    "commit": "72ec201fcc345030933d44195f683eb939bacf48",
     "pr": 0,
     "version": null,
-    "versionCode": 17,
-    "publishedAt": 1793798421000,
-    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-35dfbe5",
+    "versionCode": 18,
+    "publishedAt": 1793966331000,
+    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-72ec201",
     "apks": {
       "lity.os": {
-        "name": "LityOS-main-35dfbe5.apk",
-        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-35dfbe5/LityOS-main-35dfbe5.apk",
-        "size": 70937781,
-        "sha256": "922a758dd84c9dc12b3db1685264139baee4bf48349164cb9f4beb0a45b6276b",
+        "name": "LityOS-main-72ec201.apk",
+        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-72ec201/LityOS-main-72ec201.apk",
+        "size": 62072951,
+        "sha256": "cf052096fd8fa20bb19b346d1d3dedf26eebbe441b29960ca2890d0d78b789e8",
         "packageName": "lity.os",
-        "versionCode": 17,
+        "versionCode": 18,
         "signerSha256": "a768efdbe5be84fffc1bbc1b428ae2f0432ddaaf4d47ffa2cf896828a2b91ff1"
       }
     }
   },
   "recentPreviews": [
+    {
+      "commit": "72ec201fcc345030933d44195f683eb939bacf48",
+      "title": "Passe versionCode de 17 \u00e0 18",
+      "summary": "Incr\u00e9mente versionCode (17 \u2192 18) pour que la prochaine build sign\u00e9e soit strictement plus r\u00e9cente que main-35dfbe5. versionName reste 0.6.9.",
+      "publishedAt": 1793966331000
+    },
     {
       "commit": "35dfbe5f9d3bd03d8312cd6a0b14759804ca67b5",
       "title": "Pin LityOS release signer, publish CI to LityOS-Components [skip ci]",
