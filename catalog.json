@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "repo": "LityTech27/LityOS-Components",
-  "generatedAt": 1793897060398,
+  "generatedAt": 1793947507845,
   "stable": null,
   "preview": {
     "tag": "main-35dfbe5",
@@ -34,7 +34,14 @@
     }
   ],
   "tests": [],
-  "runtimeImage": null,
+  "runtimeImage": {
+    "tag": "lityos-r1-rc1",
+    "version": "lityos-r1-rc1",
+    "url": "https://github.com/LityTech27/LityOS-Components/releases/download/lityos-r1-rc1/lityos-r1-rc1.tar.zst",
+    "size": 288672274,
+    "sha256": "452e75fd1bd6b9d74f78bba97ca90736e3409cabc543a44f709dbc2e2ad11497",
+    "prerelease": true
+  },
   "drivers": [
     {
       "tag": "DD-Turnip-v0.3.4",
