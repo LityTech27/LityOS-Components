@@ -1,31 +1,37 @@
 {
   "schema": 1,
   "repo": "LityTech27/LityOS-Components",
-  "generatedAt": 1793966344253,
+  "generatedAt": 1793985924473,
   "stable": null,
   "preview": {
-    "tag": "main-72ec201",
-    "title": "Passe versionCode de 17 \u00e0 18",
-    "summary": "Incr\u00e9mente versionCode (17 \u2192 18) pour que la prochaine build sign\u00e9e soit strictement plus r\u00e9cente que main-35dfbe5. versionName reste 0.6.9.",
-    "commit": "72ec201fcc345030933d44195f683eb939bacf48",
+    "tag": "main-07405ce",
+    "title": "Passe versionCode de 18 \u00e0 19",
+    "summary": "Passe versionCode de 18 \u00e0 19 dans app/build.gradle pour que la prochaine build sign\u00e9e soit strictement plus r\u00e9cente que main-72ec201 (versionCode 18). versionName reste 0.6.9. Aucun test ne fixe la valeur 18.",
+    "commit": "07405ceef69e2c036453fc2eb22f613c7ffb258b",
     "pr": 0,
     "version": null,
-    "versionCode": 18,
-    "publishedAt": 1793966331000,
-    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-72ec201",
+    "versionCode": 19,
+    "publishedAt": 1793985912000,
+    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-07405ce",
     "apks": {
       "lity.os": {
-        "name": "LityOS-main-72ec201.apk",
-        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-72ec201/LityOS-main-72ec201.apk",
-        "size": 62072951,
-        "sha256": "cf052096fd8fa20bb19b346d1d3dedf26eebbe441b29960ca2890d0d78b789e8",
+        "name": "LityOS-main-07405ce.apk",
+        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-07405ce/LityOS-main-07405ce.apk",
+        "size": 62044279,
+        "sha256": "12dac36fa90ca7d8e4aa190b13d95ab78390d0a3b4eb02600dff7f00df168af2",
         "packageName": "lity.os",
-        "versionCode": 18,
+        "versionCode": 19,
         "signerSha256": "a768efdbe5be84fffc1bbc1b428ae2f0432ddaaf4d47ffa2cf896828a2b91ff1"
       }
     }
   },
   "recentPreviews": [
+    {
+      "commit": "07405ceef69e2c036453fc2eb22f613c7ffb258b",
+      "title": "Passe versionCode de 18 \u00e0 19",
+      "summary": "Passe versionCode de 18 \u00e0 19 dans app/build.gradle pour que la prochaine build sign\u00e9e soit strictement plus r\u00e9cente que main-72ec201 (versionCode 18). versionName reste 0.6.9. Aucun test ne fixe la valeur 18.",
+      "publishedAt": 1793985912000
+    },
     {
       "commit": "72ec201fcc345030933d44195f683eb939bacf48",
       "title": "Passe versionCode de 17 \u00e0 18",
