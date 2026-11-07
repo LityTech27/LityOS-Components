@@ -1,24 +1,24 @@
 {
   "schema": 1,
   "repo": "LityTech27/LityOS-Components",
-  "generatedAt": 1794057029672,
+  "generatedAt": 1794058083646,
   "stable": null,
   "preview": {
-    "tag": "main-07405ce",
-    "title": "Passe versionCode de 18 \u00e0 19",
-    "summary": "Passe versionCode de 18 \u00e0 19 dans app/build.gradle pour que la prochaine build sign\u00e9e soit strictement plus r\u00e9cente que main-72ec201 (versionCode 18). versionName reste 0.6.9. Aucun test ne fixe la valeur 18.",
-    "commit": "07405ceef69e2c036453fc2eb22f613c7ffb258b",
+    "tag": "main-3b019c8",
+    "title": "Inscrit les layouts du bureau dans les ressources de session (corrige verifyRuntimeInputs)",
+    "summary": "Le build APK sur main (154d751) \u00e9choue \u00e0 verifyRuntimeInputs : \u00ab Runtime file set changed \u00bb (https://github.com/LityTech27/LityOS/actions/runs/42374854271).",
+    "commit": "3b019c8b61d4a3d08f3741caea4be4bbfbe3c642",
     "pr": 0,
     "version": null,
     "versionCode": 19,
-    "publishedAt": 1793985912000,
-    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-07405ce",
+    "publishedAt": 1794058072000,
+    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-3b019c8",
     "apks": {
       "lity.os": {
-        "name": "LityOS-main-07405ce.apk",
-        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-07405ce/LityOS-main-07405ce.apk",
-        "size": 62044279,
-        "sha256": "12dac36fa90ca7d8e4aa190b13d95ab78390d0a3b4eb02600dff7f00df168af2",
+        "name": "LityOS-main-3b019c8.apk",
+        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-3b019c8/LityOS-main-3b019c8.apk",
+        "size": 62090035,
+        "sha256": "3565d6e4912eef167d29e075c17315fd42dfab951955764f1644343fa358ff19",
         "packageName": "lity.os",
         "versionCode": 19,
         "signerSha256": "a768efdbe5be84fffc1bbc1b428ae2f0432ddaaf4d47ffa2cf896828a2b91ff1"
@@ -26,6 +26,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "3b019c8b61d4a3d08f3741caea4be4bbfbe3c642",
+      "title": "Inscrit les layouts du bureau dans les ressources de session (corrige verifyRuntimeInputs)",
+      "summary": "Le build APK sur main (154d751) \u00e9choue \u00e0 verifyRuntimeInputs : \u00ab Runtime file set changed \u00bb (https://github.com/LityTech27/LityOS/actions/runs/42374854271).",
+      "publishedAt": 1794058072000
+    },
     {
       "commit": "07405ceef69e2c036453fc2eb22f613c7ffb258b",
       "title": "Passe versionCode de 18 \u00e0 19",
