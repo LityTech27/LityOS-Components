@@ -1,24 +1,24 @@
 {
   "schema": 1,
   "repo": "LityTech27/LityOS-Components",
-  "generatedAt": 1794058083646,
+  "generatedAt": 1794069447132,
   "stable": null,
   "preview": {
-    "tag": "main-3b019c8",
-    "title": "Inscrit les layouts du bureau dans les ressources de session (corrige verifyRuntimeInputs)",
-    "summary": "Le build APK sur main (154d751) \u00e9choue \u00e0 verifyRuntimeInputs : \u00ab Runtime file set changed \u00bb (https://github.com/LityTech27/LityOS/actions/runs/42374854271).",
-    "commit": "3b019c8b61d4a3d08f3741caea4be4bbfbe3c642",
+    "tag": "main-88fb438",
+    "title": "LityOS phone v2 PR 4: rounded output and black backdrop",
+    "summary": "Phone mode only (APK, no image change):\n\u2022 The guest SurfaceView (inside the PR 2 margins) gets rounded corners, default 28 dp, via ViewOutlineProvider + clipToOutline. Chosen over any offscreen/per-frame work: the clip is applied by the compositor on the surface layer, so no per-frame cost in the app on the software-rendered Z Flip 7. The radius is capped to half the short side.\n\u2022 Black sessionRoot backdrop whenever phone mode has margins or a radius > 0. One decision (SessionCorners.blackBackdrop) now drives the background, and it is reset with background = null (not a transparent colour), as the PR 2 reviewers asked.\n\u2022 Radius is a pref (SessionPrefs.phoneCornerDp, 0..48, 0 = square). No UI yet (not cheap enough for this PR); say if you want a Settings control.\n\u2022 A touch that starts in a black margin is swallowed until UP/CANCEL instead of being clamped to a click at the output edge (PR 2 review minor).\n\u2022 Classic/tablet, PiP and glasses: no clip, no backdrop change.",
+    "commit": "88fb438a7b30f67e81ccfd8e54f5317676d74103",
     "pr": 0,
     "version": null,
     "versionCode": 19,
-    "publishedAt": 1794058072000,
-    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-3b019c8",
+    "publishedAt": 1794069436000,
+    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-88fb438",
     "apks": {
       "lity.os": {
-        "name": "LityOS-main-3b019c8.apk",
-        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-3b019c8/LityOS-main-3b019c8.apk",
-        "size": 62090035,
-        "sha256": "3565d6e4912eef167d29e075c17315fd42dfab951955764f1644343fa358ff19",
+        "name": "LityOS-main-88fb438.apk",
+        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-88fb438/LityOS-main-88fb438.apk",
+        "size": 62110515,
+        "sha256": "fe6423ad5bd203b3ee44a3cd4e65e7f173ec5a54d6c2a2e670f2220bc8b49e73",
         "packageName": "lity.os",
         "versionCode": 19,
         "signerSha256": "a768efdbe5be84fffc1bbc1b428ae2f0432ddaaf4d47ffa2cf896828a2b91ff1"
@@ -26,6 +26,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "88fb438a7b30f67e81ccfd8e54f5317676d74103",
+      "title": "LityOS phone v2 PR 4: rounded output and black backdrop",
+      "summary": "Phone mode only (APK, no image change):\n\u2022 The guest SurfaceView (inside the PR 2 margins) gets rounded corners, default 28 dp, via ViewOutlineProvider + clipToOutline. Chosen over any offscreen/per-frame work: the clip is applied by the compositor on the surface layer, so no per-frame cost in the app on the software-rendered Z Flip 7. The radius is capped to half the short side.\n\u2022 Black sessionRoo",
+      "publishedAt": 1794069436000
+    },
     {
       "commit": "3b019c8b61d4a3d08f3741caea4be4bbfbe3c642",
       "title": "Inscrit les layouts du bureau dans les ressources de session (corrige verifyRuntimeInputs)",
