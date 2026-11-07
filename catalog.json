@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "repo": "LityTech27/LityOS-Components",
-  "generatedAt": 1793992827899,
+  "generatedAt": 1794057029672,
   "stable": null,
   "preview": {
     "tag": "main-07405ce",
@@ -47,11 +47,11 @@
   ],
   "tests": [],
   "runtimeImage": {
-    "tag": "lityos-r1-rc2",
-    "version": "lityos-r1-rc2",
-    "url": "https://github.com/LityTech27/LityOS-Components/releases/download/lityos-r1-rc2/lityos-r1-rc2.tar.zst",
-    "size": 288679954,
-    "sha256": "b36c3e8f2511f0d8c978725398779def6e3cea30572c1c12c4be5f4b18fd8767",
+    "tag": "lityos-r1-rc3",
+    "version": "lityos-r1-rc3",
+    "url": "https://github.com/LityTech27/LityOS-Components/releases/download/lityos-r1-rc3/lityos-r1-rc3.tar.zst",
+    "size": 288675466,
+    "sha256": "91de24627ca743493e32fc046de872fe28cd719a87a7437be2b836af775814f3",
     "prerelease": true
   },
   "drivers": [
