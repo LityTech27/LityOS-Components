@@ -1,31 +1,37 @@
 {
   "schema": 1,
   "repo": "LityTech27/LityOS-Components",
-  "generatedAt": 1794069447132,
+  "generatedAt": 1794127190350,
   "stable": null,
   "preview": {
-    "tag": "main-88fb438",
-    "title": "LityOS phone v2 PR 4: rounded output and black backdrop",
-    "summary": "Phone mode only (APK, no image change):\n\u2022 The guest SurfaceView (inside the PR 2 margins) gets rounded corners, default 28 dp, via ViewOutlineProvider + clipToOutline. Chosen over any offscreen/per-frame work: the clip is applied by the compositor on the surface layer, so no per-frame cost in the app on the software-rendered Z Flip 7. The radius is capped to half the short side.\n\u2022 Black sessionRoot backdrop whenever phone mode has margins or a radius > 0. One decision (SessionCorners.blackBackdrop) now drives the background, and it is reset with background = null (not a transparent colour), as the PR 2 reviewers asked.\n\u2022 Radius is a pref (SessionPrefs.phoneCornerDp, 0..48, 0 = square). No UI yet (not cheap enough for this PR); say if you want a Settings control.\n\u2022 A touch that starts in a black margin is swallowed until UP/CANCEL instead of being clamped to a click at the output edge (PR 2 review minor).\n\u2022 Classic/tablet, PiP and glasses: no clip, no backdrop change.",
-    "commit": "88fb438a7b30f67e81ccfd8e54f5317676d74103",
+    "tag": "main-face0d9",
+    "title": "Caelestia-style Plasma theme: LityOS colour scheme, translucent panels, GPU-only blur",
+    "summary": "Step 1d of the Caelestia restyle (option c), APK overlay only, no image change.",
+    "commit": "face0d985b2007e313f342a92aa0102657be2c51",
     "pr": 0,
     "version": null,
-    "versionCode": 19,
-    "publishedAt": 1794069436000,
-    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-88fb438",
+    "versionCode": 20,
+    "publishedAt": 1794127177000,
+    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-face0d9",
     "apks": {
       "lity.os": {
-        "name": "LityOS-main-88fb438.apk",
-        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-88fb438/LityOS-main-88fb438.apk",
-        "size": 62110515,
-        "sha256": "fe6423ad5bd203b3ee44a3cd4e65e7f173ec5a54d6c2a2e670f2220bc8b49e73",
+        "name": "LityOS-main-face0d9.apk",
+        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-face0d9/LityOS-main-face0d9.apk",
+        "size": 62131549,
+        "sha256": "f624fda475fb1261a4fe1403e2245c16e1045ec756ade81fd1ad41c56f79f146",
         "packageName": "lity.os",
-        "versionCode": 19,
+        "versionCode": 20,
         "signerSha256": "a768efdbe5be84fffc1bbc1b428ae2f0432ddaaf4d47ffa2cf896828a2b91ff1"
       }
     }
   },
   "recentPreviews": [
+    {
+      "commit": "face0d985b2007e313f342a92aa0102657be2c51",
+      "title": "Caelestia-style Plasma theme: LityOS colour scheme, translucent panels, GPU-only blur",
+      "summary": "Step 1d of the Caelestia restyle (option c), APK overlay only, no image change.",
+      "publishedAt": 1794127177000
+    },
     {
       "commit": "88fb438a7b30f67e81ccfd8e54f5317676d74103",
       "title": "LityOS phone v2 PR 4: rounded output and black backdrop",
