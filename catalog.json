@@ -1,24 +1,24 @@
 {
   "schema": 1,
   "repo": "LityTech27/LityOS-Components",
-  "generatedAt": 1794208600237,
+  "generatedAt": 1794222332376,
   "stable": null,
   "preview": {
-    "tag": "main-d736eb2",
-    "title": "LityOS: miroir des paquets gcab et cabextract",
-    "summary": "Les assets gcab et cabextract de Droid-Deck/DroidDeck msitools-0.106-r1 r\u00e9pondent en 504, ce qui casse l'\u00e9tape \"Prepare remaining Linux runtime assets\". Ils sont copi\u00e9s (sha256 identiques) dans https://github.com/LityTech27/LityOS-Components/releases/tag/build-dependency-msitools-0.106-r1-mirror et tools/msitools/packages.txt pointe dessus (sommes inchang\u00e9es). Aucune liste d'autorisation ni te",
-    "commit": "d736eb2b4d3d1db4e457beb782b3403360ff4ef2",
+    "tag": "main-bd8e348",
+    "title": "LityOS: shell Quickshell \u2014 carte du haut, lanceur, panneau du bas masqu\u00e9",
+    "summary": "\u2022 TopCard: theme is now owned by the card (no longer passed from shell.qml), which was undefined on device (errors at TopCard.qml 73/171/177).\n\u2022 Top card (portrait, ~340 dp): Dashboard (clock/date, uptime, session, CPU, memory), Media (MPRIS, art, controls, progress, Visualiser), Performance (SysStats: CPU/RAM/temp from /proc and /sys every 2 s, CPU history).\n\u2022 Visualiser: no audio source is readable with this Quickshell build, so it is a calm animation (livelier when playing). Timers run only while the card is expanded and the tab is visible.\n\u2022 Launcher: bottom-centre glass card, search over DesktopEntries, opened by the rail button, closes on launch, Escape or tap outside.\n\u2022 lityos-shell: sets Plasma's bottom panel(s) to autohide at start (only those on normal), records them in ~/.config/lityos/shell-panels, restores on stop / quickshell exit / lityos-shell restore (called by lityos-session when the shell is off). Panels the user changed meanwhile are left alone.\n\u2022 No blur, no shader effects. shellEnabled stays off by default.",
+    "commit": "bd8e3481863dae56f9fedc38753c1a2c220feb5f",
     "pr": 0,
     "version": null,
     "versionCode": 20,
-    "publishedAt": 1794208590000,
-    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-d736eb2",
+    "publishedAt": 1794222314000,
+    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-bd8e348",
     "apks": {
       "lity.os": {
-        "name": "LityOS-main-d736eb2.apk",
-        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-d736eb2/LityOS-main-d736eb2.apk",
-        "size": 62144523,
-        "sha256": "d3b51f84a5eab40096eac3f2c476948a430e1c4c6982a53285f44d4b97fdb5b2",
+        "name": "LityOS-main-bd8e348.apk",
+        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-bd8e348/LityOS-main-bd8e348.apk",
+        "size": 62153023,
+        "sha256": "49300bb8487933575e4ccea90e5c50d761a71dde2d456587698ec283d694155a",
         "packageName": "lity.os",
         "versionCode": 20,
         "signerSha256": "a768efdbe5be84fffc1bbc1b428ae2f0432ddaaf4d47ffa2cf896828a2b91ff1"
@@ -26,6 +26,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "bd8e3481863dae56f9fedc38753c1a2c220feb5f",
+      "title": "LityOS: shell Quickshell \u2014 carte du haut, lanceur, panneau du bas masqu\u00e9",
+      "summary": "\u2022 TopCard: theme is now owned by the card (no longer passed from shell.qml), which was undefined on device (errors at TopCard.qml 73/171/177).\n\u2022 Top card (portrait, ~340 dp): Dashboard (clock/date, uptime, session, CPU, memory), Media (MPRIS, art, controls, progress, Visualiser), Performance (SysStats: CPU/RAM/temp from /proc and /sys every 2 s, CPU history).\n\u2022 Visualiser: no audio source is reada",
+      "publishedAt": 1794222314000
+    },
     {
       "commit": "d736eb2b4d3d1db4e457beb782b3403360ff4ef2",
       "title": "LityOS: miroir des paquets gcab et cabextract",
