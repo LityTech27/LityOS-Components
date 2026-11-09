@@ -1,24 +1,24 @@
 {
   "schema": 1,
   "repo": "LityTech27/LityOS-Components",
-  "generatedAt": 1794222332376,
+  "generatedAt": 1794230183448,
   "stable": null,
   "preview": {
-    "tag": "main-bd8e348",
-    "title": "LityOS: shell Quickshell \u2014 carte du haut, lanceur, panneau du bas masqu\u00e9",
-    "summary": "\u2022 TopCard: theme is now owned by the card (no longer passed from shell.qml), which was undefined on device (errors at TopCard.qml 73/171/177).\n\u2022 Top card (portrait, ~340 dp): Dashboard (clock/date, uptime, session, CPU, memory), Media (MPRIS, art, controls, progress, Visualiser), Performance (SysStats: CPU/RAM/temp from /proc and /sys every 2 s, CPU history).\n\u2022 Visualiser: no audio source is readable with this Quickshell build, so it is a calm animation (livelier when playing). Timers run only while the card is expanded and the tab is visible.\n\u2022 Launcher: bottom-centre glass card, search over DesktopEntries, opened by the rail button, closes on launch, Escape or tap outside.\n\u2022 lityos-shell: sets Plasma's bottom panel(s) to autohide at start (only those on normal), records them in ~/.config/lityos/shell-panels, restores on stop / quickshell exit / lityos-shell restore (called by lityos-session when the shell is off). Panels the user changed meanwhile are left alone.\n\u2022 No blur, no shader effects. shellEnabled stays off by default.",
-    "commit": "bd8e3481863dae56f9fedc38753c1a2c220feb5f",
+    "tag": "main-8d48cf0",
+    "title": "LityOS: banc de chargement QML du shell en CI",
+    "summary": "\u2022 tools/tests/qmlshell/ : runshellqml.py, stubs/, README. Charge shell.qml + un pilote (TopCard 3 onglets, Launcher, Rail, SysStats, Visualiser) avec qml hors \u00e9cran, en 3 passes : avec lecteur MPRIS, sans, et \u00ab probe \u00bb (Quickshell.env renvoie BLDEBUGDIR/LITYOSSHELLPROBE ; le minuteur de 10 s des stats de trames est ramen\u00e9 \u00e0 100 ms dans une copie pour que son code s'ex\u00e9\n\u2022 Sortie stricte : toute ligne de qml est un probl\u00e8me, sauf une liste d'exceptions document\u00e9e (bruit offscreen/polices/XDGRUNTIMEDIR/EGL et les lignes qml: probe <date> du shell). Codes : 0 propre, 1 probl\u00e8mes, 2 qml absent. Sur timeout (40 s par passe) la sortie partielle est conserv\u00e9e. Nettoyage du dossier temporaire en finally. Plus d'attente fixe : fin sur le signal loaded. ~7\n\u2022 tools/tests/testqmlshell.py : cherche qml, qml6, /usr/lib/qt6/bin/qml (comme le banc) ; SKIP si absent en local, \u00c9CHEC si CI=true ou GITHUBACTIONS.\n\u2022 CI (job python-tests de build.yml, derri\u00e8re l'\u00e9tiquette build ; pas \u00ab Validate source \u00bb) : nouvelle \u00e9tape \u00ab Install QML test dependencies \u00bb (timeout 10 min, m\u00eame script avec repli sur le miroir officiel) : qml-qt6 qt6-qpa-plugins qml6-module-qtquick qml6-module-qtquick-window qml6-module-qtqml qml6-module-qtqml-models qml6-module-qtqml-workerscript. L'\u00e9tape d'installation exista\n\u2022 CLAUDE.md : une ligne exigeant ce banc pour le QML du shell.",
+    "commit": "8d48cf0751cae9cd9ef9fc3e14d0977b8ea9276b",
     "pr": 0,
     "version": null,
     "versionCode": 20,
-    "publishedAt": 1794222314000,
-    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-bd8e348",
+    "publishedAt": 1794230169000,
+    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-8d48cf0",
     "apks": {
       "lity.os": {
-        "name": "LityOS-main-bd8e348.apk",
-        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-bd8e348/LityOS-main-bd8e348.apk",
+        "name": "LityOS-main-8d48cf0.apk",
+        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-8d48cf0/LityOS-main-8d48cf0.apk",
         "size": 62153023,
-        "sha256": "49300bb8487933575e4ccea90e5c50d761a71dde2d456587698ec283d694155a",
+        "sha256": "f001fb6bda299fadb462790abd3c7916a9975503acb31864eba40158de74b4dc",
         "packageName": "lity.os",
         "versionCode": 20,
         "signerSha256": "a768efdbe5be84fffc1bbc1b428ae2f0432ddaaf4d47ffa2cf896828a2b91ff1"
@@ -26,6 +26,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "8d48cf0751cae9cd9ef9fc3e14d0977b8ea9276b",
+      "title": "LityOS: banc de chargement QML du shell en CI",
+      "summary": "\u2022 tools/tests/qmlshell/ : runshellqml.py, stubs/, README. Charge shell.qml + un pilote (TopCard 3 onglets, Launcher, Rail, SysStats, Visualiser) avec qml hors \u00e9cran, en 3 passes : avec lecteur MPRIS, sans, et \u00ab probe \u00bb (Quickshell.env renvoie BLDEBUGDIR/LITYOSSHELLPROBE ; le minuteur de 10 s des stats de trames est ramen\u00e9 \u00e0 100 ms dans une copie pour que son code s'ex\u00e9\n\u2022 Sortie stricte : toute lig",
+      "publishedAt": 1794230169000
+    },
     {
       "commit": "bd8e3481863dae56f9fedc38753c1a2c220feb5f",
       "title": "LityOS: shell Quickshell \u2014 carte du haut, lanceur, panneau du bas masqu\u00e9",
