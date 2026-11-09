@@ -1,24 +1,24 @@
 {
   "schema": 1,
   "repo": "LityTech27/LityOS-Components",
-  "generatedAt": 1794196720284,
+  "generatedAt": 1794208600237,
   "stable": null,
   "preview": {
-    "tag": "main-dcff1c6",
-    "title": "Fix checkpairs and checkenvvars on main",
-    "summary": "The Python tests on main failed after PRs 63-65 (merged with [skip ci]).",
-    "commit": "dcff1c6e0a99020fb1e4843b2452c6e42104cfde",
+    "tag": "main-d736eb2",
+    "title": "LityOS: miroir des paquets gcab et cabextract",
+    "summary": "Les assets gcab et cabextract de Droid-Deck/DroidDeck msitools-0.106-r1 r\u00e9pondent en 504, ce qui casse l'\u00e9tape \"Prepare remaining Linux runtime assets\". Ils sont copi\u00e9s (sha256 identiques) dans https://github.com/LityTech27/LityOS-Components/releases/tag/build-dependency-msitools-0.106-r1-mirror et tools/msitools/packages.txt pointe dessus (sommes inchang\u00e9es). Aucune liste d'autorisation ni te",
+    "commit": "d736eb2b4d3d1db4e457beb782b3403360ff4ef2",
     "pr": 0,
     "version": null,
     "versionCode": 20,
-    "publishedAt": 1794196706000,
-    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-dcff1c6",
+    "publishedAt": 1794208590000,
+    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-d736eb2",
     "apks": {
       "lity.os": {
-        "name": "LityOS-main-dcff1c6.apk",
-        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-dcff1c6/LityOS-main-dcff1c6.apk",
+        "name": "LityOS-main-d736eb2.apk",
+        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-d736eb2/LityOS-main-d736eb2.apk",
         "size": 62144523,
-        "sha256": "8e4af92c1e89f65cf1633187b2224bb77d099d842c1963346ef064b93d25a6ee",
+        "sha256": "d3b51f84a5eab40096eac3f2c476948a430e1c4c6982a53285f44d4b97fdb5b2",
         "packageName": "lity.os",
         "versionCode": 20,
         "signerSha256": "a768efdbe5be84fffc1bbc1b428ae2f0432ddaaf4d47ffa2cf896828a2b91ff1"
@@ -26,6 +26,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "d736eb2b4d3d1db4e457beb782b3403360ff4ef2",
+      "title": "LityOS: miroir des paquets gcab et cabextract",
+      "summary": "Les assets gcab et cabextract de Droid-Deck/DroidDeck msitools-0.106-r1 r\u00e9pondent en 504, ce qui casse l'\u00e9tape \"Prepare remaining Linux runtime assets\". Ils sont copi\u00e9s (sha256 identiques) dans https://github.com/LityTech27/LityOS-Components/releases/tag/build-dependency-msitools-0.106-r1-mirror et tools/msitools/packages.txt pointe dessus (sommes inchang\u00e9es). Aucune liste d'autorisation ni te",
+      "publishedAt": 1794208590000
+    },
     {
       "commit": "dcff1c6e0a99020fb1e4843b2452c6e42104cfde",
       "title": "Fix checkpairs and checkenvvars on main",
