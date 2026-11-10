@@ -1,24 +1,24 @@
 {
   "schema": 1,
   "repo": "LityTech27/LityOS-Components",
-  "generatedAt": 1794284034902,
+  "generatedAt": 1794334472441,
   "stable": null,
   "preview": {
-    "tag": "main-6f4ba74",
-    "title": "CI : r\u00e9tention courte des artefacts",
-    "summary": "Le quota Actions de LityTech27 (2 Go) est plein : 241 artefacts, environ 13,9 Go. Cette PR raccourcit la r\u00e9tention des artefacts. Elle ne change rien \u00e0 ce qui est publi\u00e9 sur les releases Components ni au catalogue. Aucune version n'est modifi\u00e9e et aucun build n'a \u00e9t\u00e9 lanc\u00e9.",
-    "commit": "6f4ba744e0c5976963498e6b82c2908b6baa8319",
+    "tag": "main-1bec3c3",
+    "title": "Ch\u00e2ssis : sans barre de navigation, plein \u00e9cran, gestes \u00e0 deux doigts, clavier sans redimensionnement",
+    "summary": "\u2022 Barre de navigation de l'app (NavPillView, SessionNavBar, SessionCorners, ic\u00f4nes, cha\u00eenes, tests) supprim\u00e9e sans rempla\u00e7ant.\n\u2022 Surface plein \u00e9cran dans tous les modes (plus de marge haute, basse ni de navigation, plus de coins arrondis ni de fond noir) : d\u00e9coupe et coins comme en tablette/PC ; le cadre du shell les absorbe.\n\u2022 setSystemGestureExclusionRects (GestureExclusion, bandes lat\u00e9rales, plafond ~200 dp par bord).\n\u2022 Glissement vertical \u00e0 deux doigts n'importe o\u00f9 (d\u00e9tection c\u00f4t\u00e9 app dans TwoFingerGestures, le masque de Quickshell rend la d\u00e9tection QML impossible hors de ses zones) : deux doigts vers le bas = menu haut, vers le haut = menu bas, le sens inverse ferme. Les gestes d'un doigt sur les bords sont conserv\u00e9s. Canal app -> invit\u00e9 : fichier shell-state lu par le nouveau HostState.qml. Ce\n\u2022 Clavier : la sortie n'est plus redimensionn\u00e9e. La hauteur finale de l'IME est lue une fois \u00e0 la fin de l'animation, envoy\u00e9e \u00e0 l'invit\u00e9, et le shell r\u00e9duit la zone de travail (r\u00e9serve basse) ; Desk.qml remonte avec une transition de propri\u00e9t\u00e9. Cette approche attend le jugement du capitaine sur l'appareil.\n\u2022 lityos-apply-layout shell accepte la r\u00e9ponse vide d'evaluateScript (Plasma 6.6) ; l'attente des panneaux s'arr\u00eate apr\u00e8s 3 r\u00e9ponses vides.",
+    "commit": "1bec3c3c7e1c5ab09c2f665135727a2ecedf01c5",
     "pr": 0,
     "version": null,
     "versionCode": 20,
-    "publishedAt": 1794284021000,
-    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-6f4ba74",
+    "publishedAt": 1794334459000,
+    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-1bec3c3",
     "apks": {
       "lity.os": {
-        "name": "LityOS-main-6f4ba74.apk",
-        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-6f4ba74/LityOS-main-6f4ba74.apk",
-        "size": 62175329,
-        "sha256": "830c17520a8670ede91033cb923d9553d80e9c3b84fc20cc8ec3459d4ad96877",
+        "name": "LityOS-main-1bec3c3.apk",
+        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-1bec3c3/LityOS-main-1bec3c3.apk",
+        "size": 62171168,
+        "sha256": "ed4f30e30910ecd34b3759e3021959126396067743eee6d249520f2035bb404a",
         "packageName": "lity.os",
         "versionCode": 20,
         "signerSha256": "a768efdbe5be84fffc1bbc1b428ae2f0432ddaaf4d47ffa2cf896828a2b91ff1"
@@ -26,6 +26,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "1bec3c3c7e1c5ab09c2f665135727a2ecedf01c5",
+      "title": "Ch\u00e2ssis : sans barre de navigation, plein \u00e9cran, gestes \u00e0 deux doigts, clavier sans redimensionnement",
+      "summary": "\u2022 Barre de navigation de l'app (NavPillView, SessionNavBar, SessionCorners, ic\u00f4nes, cha\u00eenes, tests) supprim\u00e9e sans rempla\u00e7ant.\n\u2022 Surface plein \u00e9cran dans tous les modes (plus de marge haute, basse ni de navigation, plus de coins arrondis ni de fond noir) : d\u00e9coupe et coins comme en tablette/PC ; le cadre du shell les absorbe.\n\u2022 setSystemGestureExclusionRects (GestureExclusion, bandes lat\u00e9rales, pl",
+      "publishedAt": 1794334459000
+    },
     {
       "commit": "6f4ba744e0c5976963498e6b82c2908b6baa8319",
       "title": "CI : r\u00e9tention courte des artefacts",
@@ -79,12 +85,6 @@
       "title": "Passe versionCode de 18 \u00e0 19",
       "summary": "Passe versionCode de 18 \u00e0 19 dans app/build.gradle pour que la prochaine build sign\u00e9e soit strictement plus r\u00e9cente que main-72ec201 (versionCode 18). versionName reste 0.6.9. Aucun test ne fixe la valeur 18.",
       "publishedAt": 1793985912000
-    },
-    {
-      "commit": "72ec201fcc345030933d44195f683eb939bacf48",
-      "title": "Passe versionCode de 17 \u00e0 18",
-      "summary": "Incr\u00e9mente versionCode (17 \u2192 18) pour que la prochaine build sign\u00e9e soit strictement plus r\u00e9cente que main-35dfbe5. versionName reste 0.6.9.",
-      "publishedAt": 1793966331000
     }
   ],
   "tests": [],
