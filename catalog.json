@@ -1,24 +1,24 @@
 {
   "schema": 1,
   "repo": "LityTech27/LityOS-Components",
-  "generatedAt": 1794230183448,
+  "generatedAt": 1794284034902,
   "stable": null,
   "preview": {
-    "tag": "main-8d48cf0",
-    "title": "LityOS: banc de chargement QML du shell en CI",
-    "summary": "\u2022 tools/tests/qmlshell/ : runshellqml.py, stubs/, README. Charge shell.qml + un pilote (TopCard 3 onglets, Launcher, Rail, SysStats, Visualiser) avec qml hors \u00e9cran, en 3 passes : avec lecteur MPRIS, sans, et \u00ab probe \u00bb (Quickshell.env renvoie BLDEBUGDIR/LITYOSSHELLPROBE ; le minuteur de 10 s des stats de trames est ramen\u00e9 \u00e0 100 ms dans une copie pour que son code s'ex\u00e9\n\u2022 Sortie stricte : toute ligne de qml est un probl\u00e8me, sauf une liste d'exceptions document\u00e9e (bruit offscreen/polices/XDGRUNTIMEDIR/EGL et les lignes qml: probe <date> du shell). Codes : 0 propre, 1 probl\u00e8mes, 2 qml absent. Sur timeout (40 s par passe) la sortie partielle est conserv\u00e9e. Nettoyage du dossier temporaire en finally. Plus d'attente fixe : fin sur le signal loaded. ~7\n\u2022 tools/tests/testqmlshell.py : cherche qml, qml6, /usr/lib/qt6/bin/qml (comme le banc) ; SKIP si absent en local, \u00c9CHEC si CI=true ou GITHUBACTIONS.\n\u2022 CI (job python-tests de build.yml, derri\u00e8re l'\u00e9tiquette build ; pas \u00ab Validate source \u00bb) : nouvelle \u00e9tape \u00ab Install QML test dependencies \u00bb (timeout 10 min, m\u00eame script avec repli sur le miroir officiel) : qml-qt6 qt6-qpa-plugins qml6-module-qtquick qml6-module-qtquick-window qml6-module-qtqml qml6-module-qtqml-models qml6-module-qtqml-workerscript. L'\u00e9tape d'installation exista\n\u2022 CLAUDE.md : une ligne exigeant ce banc pour le QML du shell.",
-    "commit": "8d48cf0751cae9cd9ef9fc3e14d0977b8ea9276b",
+    "tag": "main-6f4ba74",
+    "title": "CI : r\u00e9tention courte des artefacts",
+    "summary": "Le quota Actions de LityTech27 (2 Go) est plein : 241 artefacts, environ 13,9 Go. Cette PR raccourcit la r\u00e9tention des artefacts. Elle ne change rien \u00e0 ce qui est publi\u00e9 sur les releases Components ni au catalogue. Aucune version n'est modifi\u00e9e et aucun build n'a \u00e9t\u00e9 lanc\u00e9.",
+    "commit": "6f4ba744e0c5976963498e6b82c2908b6baa8319",
     "pr": 0,
     "version": null,
     "versionCode": 20,
-    "publishedAt": 1794230169000,
-    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-8d48cf0",
+    "publishedAt": 1794284021000,
+    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-6f4ba74",
     "apks": {
       "lity.os": {
-        "name": "LityOS-main-8d48cf0.apk",
-        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-8d48cf0/LityOS-main-8d48cf0.apk",
-        "size": 62153023,
-        "sha256": "f001fb6bda299fadb462790abd3c7916a9975503acb31864eba40158de74b4dc",
+        "name": "LityOS-main-6f4ba74.apk",
+        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-6f4ba74/LityOS-main-6f4ba74.apk",
+        "size": 62175329,
+        "sha256": "830c17520a8670ede91033cb923d9553d80e9c3b84fc20cc8ec3459d4ad96877",
         "packageName": "lity.os",
         "versionCode": 20,
         "signerSha256": "a768efdbe5be84fffc1bbc1b428ae2f0432ddaaf4d47ffa2cf896828a2b91ff1"
@@ -26,6 +26,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "6f4ba744e0c5976963498e6b82c2908b6baa8319",
+      "title": "CI : r\u00e9tention courte des artefacts",
+      "summary": "Le quota Actions de LityTech27 (2 Go) est plein : 241 artefacts, environ 13,9 Go. Cette PR raccourcit la r\u00e9tention des artefacts. Elle ne change rien \u00e0 ce qui est publi\u00e9 sur les releases Components ni au catalogue. Aucune version n'est modifi\u00e9e et aucun build n'a \u00e9t\u00e9 lanc\u00e9.",
+      "publishedAt": 1794284021000
+    },
     {
       "commit": "8d48cf0751cae9cd9ef9fc3e14d0977b8ea9276b",
       "title": "LityOS: banc de chargement QML du shell en CI",
@@ -79,12 +85,6 @@
       "title": "Passe versionCode de 17 \u00e0 18",
       "summary": "Incr\u00e9mente versionCode (17 \u2192 18) pour que la prochaine build sign\u00e9e soit strictement plus r\u00e9cente que main-35dfbe5. versionName reste 0.6.9.",
       "publishedAt": 1793966331000
-    },
-    {
-      "commit": "35dfbe5f9d3bd03d8312cd6a0b14759804ca67b5",
-      "title": "Pin LityOS release signer, publish CI to LityOS-Components [skip ci]",
-      "summary": "Replaces the pinned signer with a768efdb\u20261ff1. build.yml announce, update-catalog.yml and publish-packs.yml use secret LITYOSCOMPONENTSTOKEN against LityTech27/LityOS-Components (no GitHub App); sign.yml names assets LityOS-. Triggers unchanged. pr-release-publish.yml / pr-release-cleanup.yml left untouched (DroidDeck app and repos, package check com.droiddeck.launcher). docs/self-update.md u",
-      "publishedAt": 1793798421000
     }
   ],
   "tests": [],
