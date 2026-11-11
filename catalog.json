@@ -1,24 +1,24 @@
 {
   "schema": 1,
   "repo": "LityTech27/LityOS-Components",
-  "generatedAt": 1794401338461,
+  "generatedAt": 1794416951481,
   "stable": null,
   "preview": {
-    "tag": "main-b940f43",
-    "title": "[skip ci] LityOS shell: real volume/brightness controls, speaker opens sound panel, Plasma OSD off",
-    "summary": "[skip ci] Real device controls: speaker icon, brightness, volume, Plasma OSD.",
-    "commit": "b940f43fcde2af267f83f8aad8cdf9c429cf47b0",
+    "tag": "main-da2ade4",
+    "title": "CI: fail over across Ubuntu mirrors for apt [skip ci]",
+    "summary": "[skip ci]",
+    "commit": "da2ade43c008b246b99dc46478baacdfa2e8b7af",
     "pr": 0,
     "version": null,
     "versionCode": 20,
-    "publishedAt": 1794401324000,
-    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-b940f43",
+    "publishedAt": 1794416937000,
+    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-da2ade4",
     "apks": {
       "lity.os": {
-        "name": "LityOS-main-b940f43.apk",
-        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-b940f43/LityOS-main-b940f43.apk",
-        "size": 62191844,
-        "sha256": "b2ce4531fea32bbe7c327607589c994af75d7489231a63aa42b7191f7d14bd7e",
+        "name": "LityOS-main-da2ade4.apk",
+        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-da2ade4/LityOS-main-da2ade4.apk",
+        "size": 62204136,
+        "sha256": "8f73e14434da85c0ab1db2fd932bf3639bfc0ae130886eb2dcaaebb7a157d25b",
         "packageName": "lity.os",
         "versionCode": 20,
         "signerSha256": "a768efdbe5be84fffc1bbc1b428ae2f0432ddaaf4d47ffa2cf896828a2b91ff1"
@@ -26,6 +26,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "da2ade43c008b246b99dc46478baacdfa2e8b7af",
+      "title": "CI: fail over across Ubuntu mirrors for apt [skip ci]",
+      "summary": "[skip ci]",
+      "publishedAt": 1794416937000
+    },
     {
       "commit": "b940f43fcde2af267f83f8aad8cdf9c429cf47b0",
       "title": "[skip ci] LityOS shell: real volume/brightness controls, speaker opens sound panel, Plasma OSD off",
@@ -79,12 +85,6 @@
       "title": "Caelestia-style Plasma theme: LityOS colour scheme, translucent panels, GPU-only blur",
       "summary": "Step 1d of the Caelestia restyle (option c), APK overlay only, no image change.",
       "publishedAt": 1794127177000
-    },
-    {
-      "commit": "88fb438a7b30f67e81ccfd8e54f5317676d74103",
-      "title": "LityOS phone v2 PR 4: rounded output and black backdrop",
-      "summary": "Phone mode only (APK, no image change):\n\u2022 The guest SurfaceView (inside the PR 2 margins) gets rounded corners, default 28 dp, via ViewOutlineProvider + clipToOutline. Chosen over any offscreen/per-frame work: the clip is applied by the compositor on the surface layer, so no per-frame cost in the app on the software-rendered Z Flip 7. The radius is capped to half the short side.\n\u2022 Black sessionRoo",
-      "publishedAt": 1794069436000
     }
   ],
   "tests": [],
