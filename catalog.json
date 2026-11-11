@@ -1,24 +1,24 @@
 {
   "schema": 1,
   "repo": "LityTech27/LityOS-Components",
-  "generatedAt": 1794416951481,
+  "generatedAt": 1794433621639,
   "stable": null,
   "preview": {
-    "tag": "main-da2ade4",
-    "title": "CI: fail over across Ubuntu mirrors for apt [skip ci]",
+    "tag": "main-eee7232",
+    "title": "Rail : identit\u00e9 canonique, plus d'ic\u00f4ne en double [skip ci]",
     "summary": "[skip ci]",
-    "commit": "da2ade43c008b246b99dc46478baacdfa2e8b7af",
+    "commit": "eee7232e167d59e1f736a05e0172c2849e1563d5",
     "pr": 0,
     "version": null,
     "versionCode": 20,
-    "publishedAt": 1794416937000,
-    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-da2ade4",
+    "publishedAt": 1794433606000,
+    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-eee7232",
     "apks": {
       "lity.os": {
-        "name": "LityOS-main-da2ade4.apk",
-        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-da2ade4/LityOS-main-da2ade4.apk",
-        "size": 62204136,
-        "sha256": "8f73e14434da85c0ab1db2fd932bf3639bfc0ae130886eb2dcaaebb7a157d25b",
+        "name": "LityOS-main-eee7232.apk",
+        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-eee7232/LityOS-main-eee7232.apk",
+        "size": 62232808,
+        "sha256": "ed971de7cab5c5638a0f93ebab6730a9d9e4305cb185e6d46f272b475a811ed0",
         "packageName": "lity.os",
         "versionCode": 20,
         "signerSha256": "a768efdbe5be84fffc1bbc1b428ae2f0432ddaaf4d47ffa2cf896828a2b91ff1"
@@ -26,6 +26,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "eee7232e167d59e1f736a05e0172c2849e1563d5",
+      "title": "Rail : identit\u00e9 canonique, plus d'ic\u00f4ne en double [skip ci]",
+      "summary": "[skip ci]",
+      "publishedAt": 1794433606000
+    },
     {
       "commit": "da2ade43c008b246b99dc46478baacdfa2e8b7af",
       "title": "CI: fail over across Ubuntu mirrors for apt [skip ci]",
@@ -79,12 +85,6 @@
       "title": "Fix checkpairs and checkenvvars on main",
       "summary": "The Python tests on main failed after PRs 63-65 (merged with [skip ci]).",
       "publishedAt": 1794196706000
-    },
-    {
-      "commit": "face0d985b2007e313f342a92aa0102657be2c51",
-      "title": "Caelestia-style Plasma theme: LityOS colour scheme, translucent panels, GPU-only blur",
-      "summary": "Step 1d of the Caelestia restyle (option c), APK overlay only, no image change.",
-      "publishedAt": 1794127177000
     }
   ],
   "tests": [],
