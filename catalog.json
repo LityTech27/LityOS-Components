@@ -1,24 +1,24 @@
 {
   "schema": 1,
   "repo": "LityTech27/LityOS-Components",
-  "generatedAt": 1794392169861,
+  "generatedAt": 1794401338461,
   "stable": null,
   "preview": {
-    "tag": "main-ccc397d",
-    "title": "LityOS shell: fix flaky OSD restore after a crash",
-    "summary": "Root cause: lityos-shell stop runs osdrestore while the running shell's TERM trap runs it too. Both read the marker and wrote plasmaparc concurrently, so the config could end up empty (CI run 42991478682, testosdnextstartafteracrashkeepstheoriginalvalues).",
-    "commit": "ccc397ddff06a1831c06f2b52af6babab9f90113",
+    "tag": "main-b940f43",
+    "title": "[skip ci] LityOS shell: real volume/brightness controls, speaker opens sound panel, Plasma OSD off",
+    "summary": "[skip ci] Real device controls: speaker icon, brightness, volume, Plasma OSD.",
+    "commit": "b940f43fcde2af267f83f8aad8cdf9c429cf47b0",
     "pr": 0,
     "version": null,
     "versionCode": 20,
-    "publishedAt": 1794392156000,
-    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-ccc397d",
+    "publishedAt": 1794401324000,
+    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-b940f43",
     "apks": {
       "lity.os": {
-        "name": "LityOS-main-ccc397d.apk",
-        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-ccc397d/LityOS-main-ccc397d.apk",
-        "size": 62187748,
-        "sha256": "16c16b34a6dbb745509ed1e50e9f49eb9a0990ffec708dc10063aaecd9f05ba1",
+        "name": "LityOS-main-b940f43.apk",
+        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-b940f43/LityOS-main-b940f43.apk",
+        "size": 62191844,
+        "sha256": "b2ce4531fea32bbe7c327607589c994af75d7489231a63aa42b7191f7d14bd7e",
         "packageName": "lity.os",
         "versionCode": 20,
         "signerSha256": "a768efdbe5be84fffc1bbc1b428ae2f0432ddaaf4d47ffa2cf896828a2b91ff1"
@@ -26,6 +26,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "b940f43fcde2af267f83f8aad8cdf9c429cf47b0",
+      "title": "[skip ci] LityOS shell: real volume/brightness controls, speaker opens sound panel, Plasma OSD off",
+      "summary": "[skip ci] Real device controls: speaker icon, brightness, volume, Plasma OSD.",
+      "publishedAt": 1794401324000
+    },
     {
       "commit": "ccc397ddff06a1831c06f2b52af6babab9f90113",
       "title": "LityOS shell: fix flaky OSD restore after a crash",
@@ -79,12 +85,6 @@
       "title": "LityOS phone v2 PR 4: rounded output and black backdrop",
       "summary": "Phone mode only (APK, no image change):\n\u2022 The guest SurfaceView (inside the PR 2 margins) gets rounded corners, default 28 dp, via ViewOutlineProvider + clipToOutline. Chosen over any offscreen/per-frame work: the clip is applied by the compositor on the surface layer, so no per-frame cost in the app on the software-rendered Z Flip 7. The radius is capped to half the short side.\n\u2022 Black sessionRoo",
       "publishedAt": 1794069436000
-    },
-    {
-      "commit": "3b019c8b61d4a3d08f3741caea4be4bbfbe3c642",
-      "title": "Inscrit les layouts du bureau dans les ressources de session (corrige verifyRuntimeInputs)",
-      "summary": "Le build APK sur main (154d751) \u00e9choue \u00e0 verifyRuntimeInputs : \u00ab Runtime file set changed \u00bb (https://github.com/LityTech27/LityOS/actions/runs/42374854271).",
-      "publishedAt": 1794058072000
     }
   ],
   "tests": [],
