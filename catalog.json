@@ -1,24 +1,24 @@
 {
   "schema": 1,
   "repo": "LityTech27/LityOS-Components",
-  "generatedAt": 1794433621639,
+  "generatedAt": 1794513355299,
   "stable": null,
   "preview": {
-    "tag": "main-eee7232",
-    "title": "Rail : identit\u00e9 canonique, plus d'ic\u00f4ne en double [skip ci]",
+    "tag": "main-1c1e4b0",
+    "title": "Corrige WindowGestureTest.theWindowOnTopHidesTheStripBelowIt [skip ci]",
     "summary": "[skip ci]",
-    "commit": "eee7232e167d59e1f736a05e0172c2849e1563d5",
+    "commit": "1c1e4b0bebc9befd7d286ed9d7080ab9080f9bca",
     "pr": 0,
     "version": null,
     "versionCode": 20,
-    "publishedAt": 1794433606000,
-    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-eee7232",
+    "publishedAt": 1794513340000,
+    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-1c1e4b0",
     "apks": {
       "lity.os": {
-        "name": "LityOS-main-eee7232.apk",
-        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-eee7232/LityOS-main-eee7232.apk",
-        "size": 62232808,
-        "sha256": "ed971de7cab5c5638a0f93ebab6730a9d9e4305cb185e6d46f272b475a811ed0",
+        "name": "LityOS-main-1c1e4b0.apk",
+        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-1c1e4b0/LityOS-main-1c1e4b0.apk",
+        "size": 62249599,
+        "sha256": "713f7d251f45303145d47039e7659809ebe6c93e636b02a517913c4880908103",
         "packageName": "lity.os",
         "versionCode": 20,
         "signerSha256": "a768efdbe5be84fffc1bbc1b428ae2f0432ddaaf4d47ffa2cf896828a2b91ff1"
@@ -26,6 +26,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "1c1e4b0bebc9befd7d286ed9d7080ab9080f9bca",
+      "title": "Corrige WindowGestureTest.theWindowOnTopHidesTheStripBelowIt [skip ci]",
+      "summary": "[skip ci]",
+      "publishedAt": 1794513340000
+    },
     {
       "commit": "eee7232e167d59e1f736a05e0172c2849e1563d5",
       "title": "Rail : identit\u00e9 canonique, plus d'ic\u00f4ne en double [skip ci]",
@@ -79,12 +85,6 @@
       "title": "LityOS: miroir des paquets gcab et cabextract",
       "summary": "Les assets gcab et cabextract de Droid-Deck/DroidDeck msitools-0.106-r1 r\u00e9pondent en 504, ce qui casse l'\u00e9tape \"Prepare remaining Linux runtime assets\". Ils sont copi\u00e9s (sha256 identiques) dans https://github.com/LityTech27/LityOS-Components/releases/tag/build-dependency-msitools-0.106-r1-mirror et tools/msitools/packages.txt pointe dessus (sommes inchang\u00e9es). Aucune liste d'autorisation ni te",
       "publishedAt": 1794208590000
-    },
-    {
-      "commit": "dcff1c6e0a99020fb1e4843b2452c6e42104cfde",
-      "title": "Fix checkpairs and checkenvvars on main",
-      "summary": "The Python tests on main failed after PRs 63-65 (merged with [skip ci]).",
-      "publishedAt": 1794196706000
     }
   ],
   "tests": [],
