@@ -1,24 +1,24 @@
 {
   "schema": 1,
   "repo": "LityTech27/LityOS-Components",
-  "generatedAt": 1794513355299,
+  "generatedAt": 1794516085093,
   "stable": null,
   "preview": {
-    "tag": "main-1c1e4b0",
-    "title": "Corrige WindowGestureTest.theWindowOnTopHidesTheStripBelowIt [skip ci]",
+    "tag": "main-3563679",
+    "title": "Fix StateLayer : propri\u00e9t\u00e9 long r\u00e9serv\u00e9e, le shell ne charge plus [skip ci]",
     "summary": "[skip ci]",
-    "commit": "1c1e4b0bebc9befd7d286ed9d7080ab9080f9bca",
+    "commit": "35636791a2106f01dc3a9888d3b54c640ae77052",
     "pr": 0,
     "version": null,
     "versionCode": 20,
-    "publishedAt": 1794513340000,
-    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-1c1e4b0",
+    "publishedAt": 1794516070000,
+    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-3563679",
     "apks": {
       "lity.os": {
-        "name": "LityOS-main-1c1e4b0.apk",
-        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-1c1e4b0/LityOS-main-1c1e4b0.apk",
+        "name": "LityOS-main-3563679.apk",
+        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-3563679/LityOS-main-3563679.apk",
         "size": 62249599,
-        "sha256": "713f7d251f45303145d47039e7659809ebe6c93e636b02a517913c4880908103",
+        "sha256": "7515ab540b37db4680b0d95cc59c07ad95e4ca179a672c004466bb6f0d0e136b",
         "packageName": "lity.os",
         "versionCode": 20,
         "signerSha256": "a768efdbe5be84fffc1bbc1b428ae2f0432ddaaf4d47ffa2cf896828a2b91ff1"
@@ -26,6 +26,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "35636791a2106f01dc3a9888d3b54c640ae77052",
+      "title": "Fix StateLayer : propri\u00e9t\u00e9 long r\u00e9serv\u00e9e, le shell ne charge plus [skip ci]",
+      "summary": "[skip ci]",
+      "publishedAt": 1794516070000
+    },
     {
       "commit": "1c1e4b0bebc9befd7d286ed9d7080ab9080f9bca",
       "title": "Corrige WindowGestureTest.theWindowOnTopHidesTheStripBelowIt [skip ci]",
@@ -79,12 +85,6 @@
       "title": "LityOS: shell Quickshell \u2014 carte du haut, lanceur, panneau du bas masqu\u00e9",
       "summary": "\u2022 TopCard: theme is now owned by the card (no longer passed from shell.qml), which was undefined on device (errors at TopCard.qml 73/171/177).\n\u2022 Top card (portrait, ~340 dp): Dashboard (clock/date, uptime, session, CPU, memory), Media (MPRIS, art, controls, progress, Visualiser), Performance (SysStats: CPU/RAM/temp from /proc and /sys every 2 s, CPU history).\n\u2022 Visualiser: no audio source is reada",
       "publishedAt": 1794222314000
-    },
-    {
-      "commit": "d736eb2b4d3d1db4e457beb782b3403360ff4ef2",
-      "title": "LityOS: miroir des paquets gcab et cabextract",
-      "summary": "Les assets gcab et cabextract de Droid-Deck/DroidDeck msitools-0.106-r1 r\u00e9pondent en 504, ce qui casse l'\u00e9tape \"Prepare remaining Linux runtime assets\". Ils sont copi\u00e9s (sha256 identiques) dans https://github.com/LityTech27/LityOS-Components/releases/tag/build-dependency-msitools-0.106-r1-mirror et tools/msitools/packages.txt pointe dessus (sommes inchang\u00e9es). Aucune liste d'autorisation ni te",
-      "publishedAt": 1794208590000
     }
   ],
   "tests": [],
