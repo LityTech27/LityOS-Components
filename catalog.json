@@ -1,24 +1,24 @@
 {
   "schema": 1,
   "repo": "LityTech27/LityOS-Components",
-  "generatedAt": 1794569330886,
+  "generatedAt": 1794574584001,
   "stable": null,
   "preview": {
-    "tag": "main-3d76d50",
-    "title": "Rail : une seule ic\u00f4ne Param\u00e8tres (fen\u00eatre kdesystemsettings)",
-    "summary": "La fen\u00eatre kdesystemsettings (\u00ab Quick Settings \u2014 System Settings \u00bb) \u00e9tait list\u00e9e en entr\u00e9e suppl\u00e9mentaire : son entr\u00e9e .desktop jumelle kdesystemsettings n'avait pas la m\u00eame cl\u00e9 que le favori systemsettings. Bridge.canon ram\u00e8ne d\u00e9sormais kdesystemsettings (et kcmshell/kinfocenter) \u00e0 la m\u00eame cl\u00e9. La source de la fen\u00eatre n'est pas dans ce d\u00e9p\u00f4t (aucun tile/autostart ne",
-    "commit": "3d76d50fa10b74640f44d957dbc0c4373f9061f7",
+    "tag": "main-f52a78f",
+    "title": "D\u00e9coration de fen\u00eatre LityOS : pilule iPadOS en QML KWin, livr\u00e9e sans activation [skip ci]",
+    "summary": "\u00c9tape 2 du plan des fen\u00eatres style iPadOS. [skip ci]",
+    "commit": "f52a78fa3977d3fef92e02f343ceb819cde502c1",
     "pr": 0,
     "version": null,
     "versionCode": 20,
-    "publishedAt": 1794569316000,
-    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-3d76d50",
+    "publishedAt": 1794574570000,
+    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-f52a78f",
     "apks": {
       "lity.os": {
-        "name": "LityOS-main-3d76d50.apk",
-        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-3d76d50/LityOS-main-3d76d50.apk",
-        "size": 62237308,
-        "sha256": "a92e656ec5088594d4d73d57625c1ae03e399bc91c3e15e95dbd19b59552f82b",
+        "name": "LityOS-main-f52a78f.apk",
+        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-f52a78f/LityOS-main-f52a78f.apk",
+        "size": 62241748,
+        "sha256": "af10d2ae0e86c484ed6e9682508e0acc50b509eac741174d8e0e7db2cd10f4cf",
         "packageName": "lity.os",
         "versionCode": 20,
         "signerSha256": "a768efdbe5be84fffc1bbc1b428ae2f0432ddaaf4d47ffa2cf896828a2b91ff1"
@@ -26,6 +26,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "f52a78fa3977d3fef92e02f343ceb819cde502c1",
+      "title": "D\u00e9coration de fen\u00eatre LityOS : pilule iPadOS en QML KWin, livr\u00e9e sans activation [skip ci]",
+      "summary": "\u00c9tape 2 du plan des fen\u00eatres style iPadOS. [skip ci]",
+      "publishedAt": 1794574570000
+    },
     {
       "commit": "3d76d50fa10b74640f44d957dbc0c4373f9061f7",
       "title": "Rail : une seule ic\u00f4ne Param\u00e8tres (fen\u00eatre kdesystemsettings)",
@@ -79,12 +85,6 @@
       "title": "CI : r\u00e9tention courte des artefacts",
       "summary": "Le quota Actions de LityTech27 (2 Go) est plein : 241 artefacts, environ 13,9 Go. Cette PR raccourcit la r\u00e9tention des artefacts. Elle ne change rien \u00e0 ce qui est publi\u00e9 sur les releases Components ni au catalogue. Aucune version n'est modifi\u00e9e et aucun build n'a \u00e9t\u00e9 lanc\u00e9.",
       "publishedAt": 1794284021000
-    },
-    {
-      "commit": "8d48cf0751cae9cd9ef9fc3e14d0977b8ea9276b",
-      "title": "LityOS: banc de chargement QML du shell en CI",
-      "summary": "\u2022 tools/tests/qmlshell/ : runshellqml.py, stubs/, README. Charge shell.qml + un pilote (TopCard 3 onglets, Launcher, Rail, SysStats, Visualiser) avec qml hors \u00e9cran, en 3 passes : avec lecteur MPRIS, sans, et \u00ab probe \u00bb (Quickshell.env renvoie BLDEBUGDIR/LITYOSSHELLPROBE ; le minuteur de 10 s des stats de trames est ramen\u00e9 \u00e0 100 ms dans une copie pour que son code s'ex\u00e9\n\u2022 Sortie stricte : toute lig",
-      "publishedAt": 1794230169000
     }
   ],
   "tests": [],
