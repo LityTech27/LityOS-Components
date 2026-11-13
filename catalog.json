@@ -1,24 +1,24 @@
 {
   "schema": 1,
   "repo": "LityTech27/LityOS-Components",
-  "generatedAt": 1794579014031,
+  "generatedAt": 1794602775738,
   "stable": null,
   "preview": {
-    "tag": "main-18dfbe3",
-    "title": "\u00c9chelle auto : plancher de largeur utile (L 640, minimum 600) [skip ci]",
-    "summary": "Le facteur auto donnait 1,99 sur 1080 px (~543 px logiques, ~490 utiles apr\u00e8s le rail de 52) : applis rogn\u00e9es \u00e0 droite en portrait.",
-    "commit": "18dfbe381dcb48737062594745f1e9f63c77278a",
+    "tag": "main-6b33b8e",
+    "title": "Konsole : profil par d\u00e9faut LityOS",
+    "summary": "Konsole affichait \u00ab Could not find '' \u00bb : konsolerc sans DefaultProfile et aucun .profile. lityos-desktop-branding cr\u00e9e LityOS.profile (/bin/bash) et pose DefaultProfile si absent, sans \u00e9craser l'existant. Test Python : testkonsoleprofile.py (4 OK en local). Pas de Kotlin touch\u00e9.",
+    "commit": "6b33b8e74694893e0c00dd87a9b51e4358f40aa2",
     "pr": 0,
     "version": null,
     "versionCode": 20,
-    "publishedAt": 1794579000000,
-    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-18dfbe3",
+    "publishedAt": 1794602760000,
+    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-6b33b8e",
     "apks": {
       "lity.os": {
-        "name": "LityOS-main-18dfbe3.apk",
-        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-18dfbe3/LityOS-main-18dfbe3.apk",
+        "name": "LityOS-main-6b33b8e.apk",
+        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-6b33b8e/LityOS-main-6b33b8e.apk",
         "size": 62241748,
-        "sha256": "6569a2bf4cedb97fb30995298ec474528e2e9886d7394c01c77153f1b3919070",
+        "sha256": "dd6206ef02861cd26fa8e91ce770f766938272795ac74fcc172d26e016c6a8a3",
         "packageName": "lity.os",
         "versionCode": 20,
         "signerSha256": "a768efdbe5be84fffc1bbc1b428ae2f0432ddaaf4d47ffa2cf896828a2b91ff1"
@@ -26,6 +26,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "6b33b8e74694893e0c00dd87a9b51e4358f40aa2",
+      "title": "Konsole : profil par d\u00e9faut LityOS",
+      "summary": "Konsole affichait \u00ab Could not find '' \u00bb : konsolerc sans DefaultProfile et aucun .profile. lityos-desktop-branding cr\u00e9e LityOS.profile (/bin/bash) et pose DefaultProfile si absent, sans \u00e9craser l'existant. Test Python : testkonsoleprofile.py (4 OK en local). Pas de Kotlin touch\u00e9.",
+      "publishedAt": 1794602760000
+    },
     {
       "commit": "18dfbe381dcb48737062594745f1e9f63c77278a",
       "title": "\u00c9chelle auto : plancher de largeur utile (L 640, minimum 600) [skip ci]",
@@ -79,12 +85,6 @@
       "title": "LityOS shell: fix flaky OSD restore after a crash",
       "summary": "Root cause: lityos-shell stop runs osdrestore while the running shell's TERM trap runs it too. Both read the marker and wrote plasmaparc concurrently, so the config could end up empty (CI run 42991478682, testosdnextstartafteracrashkeepstheoriginalvalues).",
       "publishedAt": 1794392156000
-    },
-    {
-      "commit": "1bec3c3c7e1c5ab09c2f665135727a2ecedf01c5",
-      "title": "Ch\u00e2ssis : sans barre de navigation, plein \u00e9cran, gestes \u00e0 deux doigts, clavier sans redimensionnement",
-      "summary": "\u2022 Barre de navigation de l'app (NavPillView, SessionNavBar, SessionCorners, ic\u00f4nes, cha\u00eenes, tests) supprim\u00e9e sans rempla\u00e7ant.\n\u2022 Surface plein \u00e9cran dans tous les modes (plus de marge haute, basse ni de navigation, plus de coins arrondis ni de fond noir) : d\u00e9coupe et coins comme en tablette/PC ; le cadre du shell les absorbe.\n\u2022 setSystemGestureExclusionRects (GestureExclusion, bandes lat\u00e9rales, pl",
-      "publishedAt": 1794334459000
     }
   ],
   "tests": [],
