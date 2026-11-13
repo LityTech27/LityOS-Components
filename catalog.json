@@ -1,24 +1,24 @@
 {
   "schema": 1,
   "repo": "LityTech27/LityOS-Components",
-  "generatedAt": 1794574584001,
+  "generatedAt": 1794579014031,
   "stable": null,
   "preview": {
-    "tag": "main-f52a78f",
-    "title": "D\u00e9coration de fen\u00eatre LityOS : pilule iPadOS en QML KWin, livr\u00e9e sans activation [skip ci]",
-    "summary": "\u00c9tape 2 du plan des fen\u00eatres style iPadOS. [skip ci]",
-    "commit": "f52a78fa3977d3fef92e02f343ceb819cde502c1",
+    "tag": "main-18dfbe3",
+    "title": "\u00c9chelle auto : plancher de largeur utile (L 640, minimum 600) [skip ci]",
+    "summary": "Le facteur auto donnait 1,99 sur 1080 px (~543 px logiques, ~490 utiles apr\u00e8s le rail de 52) : applis rogn\u00e9es \u00e0 droite en portrait.",
+    "commit": "18dfbe381dcb48737062594745f1e9f63c77278a",
     "pr": 0,
     "version": null,
     "versionCode": 20,
-    "publishedAt": 1794574570000,
-    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-f52a78f",
+    "publishedAt": 1794579000000,
+    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-18dfbe3",
     "apks": {
       "lity.os": {
-        "name": "LityOS-main-f52a78f.apk",
-        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-f52a78f/LityOS-main-f52a78f.apk",
+        "name": "LityOS-main-18dfbe3.apk",
+        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-18dfbe3/LityOS-main-18dfbe3.apk",
         "size": 62241748,
-        "sha256": "af10d2ae0e86c484ed6e9682508e0acc50b509eac741174d8e0e7db2cd10f4cf",
+        "sha256": "6569a2bf4cedb97fb30995298ec474528e2e9886d7394c01c77153f1b3919070",
         "packageName": "lity.os",
         "versionCode": 20,
         "signerSha256": "a768efdbe5be84fffc1bbc1b428ae2f0432ddaaf4d47ffa2cf896828a2b91ff1"
@@ -26,6 +26,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "18dfbe381dcb48737062594745f1e9f63c77278a",
+      "title": "\u00c9chelle auto : plancher de largeur utile (L 640, minimum 600) [skip ci]",
+      "summary": "Le facteur auto donnait 1,99 sur 1080 px (~543 px logiques, ~490 utiles apr\u00e8s le rail de 52) : applis rogn\u00e9es \u00e0 droite en portrait.",
+      "publishedAt": 1794579000000
+    },
     {
       "commit": "f52a78fa3977d3fef92e02f343ceb819cde502c1",
       "title": "D\u00e9coration de fen\u00eatre LityOS : pilule iPadOS en QML KWin, livr\u00e9e sans activation [skip ci]",
@@ -79,12 +85,6 @@
       "title": "Ch\u00e2ssis : sans barre de navigation, plein \u00e9cran, gestes \u00e0 deux doigts, clavier sans redimensionnement",
       "summary": "\u2022 Barre de navigation de l'app (NavPillView, SessionNavBar, SessionCorners, ic\u00f4nes, cha\u00eenes, tests) supprim\u00e9e sans rempla\u00e7ant.\n\u2022 Surface plein \u00e9cran dans tous les modes (plus de marge haute, basse ni de navigation, plus de coins arrondis ni de fond noir) : d\u00e9coupe et coins comme en tablette/PC ; le cadre du shell les absorbe.\n\u2022 setSystemGestureExclusionRects (GestureExclusion, bandes lat\u00e9rales, pl",
       "publishedAt": 1794334459000
-    },
-    {
-      "commit": "6f4ba744e0c5976963498e6b82c2908b6baa8319",
-      "title": "CI : r\u00e9tention courte des artefacts",
-      "summary": "Le quota Actions de LityTech27 (2 Go) est plein : 241 artefacts, environ 13,9 Go. Cette PR raccourcit la r\u00e9tention des artefacts. Elle ne change rien \u00e0 ce qui est publi\u00e9 sur les releases Components ni au catalogue. Aucune version n'est modifi\u00e9e et aucun build n'a \u00e9t\u00e9 lanc\u00e9.",
-      "publishedAt": 1794284021000
     }
   ],
   "tests": [],
