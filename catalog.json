@@ -1,24 +1,24 @@
 {
   "schema": 1,
   "repo": "LityTech27/LityOS-Components",
-  "generatedAt": 1794516085093,
+  "generatedAt": 1794569330886,
   "stable": null,
   "preview": {
-    "tag": "main-3563679",
-    "title": "Fix StateLayer : propri\u00e9t\u00e9 long r\u00e9serv\u00e9e, le shell ne charge plus [skip ci]",
-    "summary": "[skip ci]",
-    "commit": "35636791a2106f01dc3a9888d3b54c640ae77052",
+    "tag": "main-3d76d50",
+    "title": "Rail : une seule ic\u00f4ne Param\u00e8tres (fen\u00eatre kdesystemsettings)",
+    "summary": "La fen\u00eatre kdesystemsettings (\u00ab Quick Settings \u2014 System Settings \u00bb) \u00e9tait list\u00e9e en entr\u00e9e suppl\u00e9mentaire : son entr\u00e9e .desktop jumelle kdesystemsettings n'avait pas la m\u00eame cl\u00e9 que le favori systemsettings. Bridge.canon ram\u00e8ne d\u00e9sormais kdesystemsettings (et kcmshell/kinfocenter) \u00e0 la m\u00eame cl\u00e9. La source de la fen\u00eatre n'est pas dans ce d\u00e9p\u00f4t (aucun tile/autostart ne",
+    "commit": "3d76d50fa10b74640f44d957dbc0c4373f9061f7",
     "pr": 0,
     "version": null,
     "versionCode": 20,
-    "publishedAt": 1794516070000,
-    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-3563679",
+    "publishedAt": 1794569316000,
+    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-3d76d50",
     "apks": {
       "lity.os": {
-        "name": "LityOS-main-3563679.apk",
-        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-3563679/LityOS-main-3563679.apk",
-        "size": 62249599,
-        "sha256": "7515ab540b37db4680b0d95cc59c07ad95e4ca179a672c004466bb6f0d0e136b",
+        "name": "LityOS-main-3d76d50.apk",
+        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-3d76d50/LityOS-main-3d76d50.apk",
+        "size": 62237308,
+        "sha256": "a92e656ec5088594d4d73d57625c1ae03e399bc91c3e15e95dbd19b59552f82b",
         "packageName": "lity.os",
         "versionCode": 20,
         "signerSha256": "a768efdbe5be84fffc1bbc1b428ae2f0432ddaaf4d47ffa2cf896828a2b91ff1"
@@ -26,6 +26,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "3d76d50fa10b74640f44d957dbc0c4373f9061f7",
+      "title": "Rail : une seule ic\u00f4ne Param\u00e8tres (fen\u00eatre kdesystemsettings)",
+      "summary": "La fen\u00eatre kdesystemsettings (\u00ab Quick Settings \u2014 System Settings \u00bb) \u00e9tait list\u00e9e en entr\u00e9e suppl\u00e9mentaire : son entr\u00e9e .desktop jumelle kdesystemsettings n'avait pas la m\u00eame cl\u00e9 que le favori systemsettings. Bridge.canon ram\u00e8ne d\u00e9sormais kdesystemsettings (et kcmshell/kinfocenter) \u00e0 la m\u00eame cl\u00e9. La source de la fen\u00eatre n'est pas dans ce d\u00e9p\u00f4t (aucun tile/autostart ne",
+      "publishedAt": 1794569316000
+    },
     {
       "commit": "35636791a2106f01dc3a9888d3b54c640ae77052",
       "title": "Fix StateLayer : propri\u00e9t\u00e9 long r\u00e9serv\u00e9e, le shell ne charge plus [skip ci]",
@@ -79,12 +85,6 @@
       "title": "LityOS: banc de chargement QML du shell en CI",
       "summary": "\u2022 tools/tests/qmlshell/ : runshellqml.py, stubs/, README. Charge shell.qml + un pilote (TopCard 3 onglets, Launcher, Rail, SysStats, Visualiser) avec qml hors \u00e9cran, en 3 passes : avec lecteur MPRIS, sans, et \u00ab probe \u00bb (Quickshell.env renvoie BLDEBUGDIR/LITYOSSHELLPROBE ; le minuteur de 10 s des stats de trames est ramen\u00e9 \u00e0 100 ms dans une copie pour que son code s'ex\u00e9\n\u2022 Sortie stricte : toute lig",
       "publishedAt": 1794230169000
-    },
-    {
-      "commit": "bd8e3481863dae56f9fedc38753c1a2c220feb5f",
-      "title": "LityOS: shell Quickshell \u2014 carte du haut, lanceur, panneau du bas masqu\u00e9",
-      "summary": "\u2022 TopCard: theme is now owned by the card (no longer passed from shell.qml), which was undefined on device (errors at TopCard.qml 73/171/177).\n\u2022 Top card (portrait, ~340 dp): Dashboard (clock/date, uptime, session, CPU, memory), Media (MPRIS, art, controls, progress, Visualiser), Performance (SysStats: CPU/RAM/temp from /proc and /sys every 2 s, CPU history).\n\u2022 Visualiser: no audio source is reada",
-      "publishedAt": 1794222314000
     }
   ],
   "tests": [],
