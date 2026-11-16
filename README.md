@@ -1,15 +1,16 @@
 # LityOS-Components
 
-Dépôt public de distribution des releases de [LityOS](https://github.com/LityTech27/LityOS). Il ne contient pas de code : il sert à publier les fichiers téléchargés par l'application.
+Dépôt public de distribution des releases de LityOS. Il ne contient pas de code : il sert à publier les fichiers téléchargés par l'application. Le dépôt de développement de LityOS n'est pas public ; le code source correspondant est fourni comme décrit dans [SOURCE.md](SOURCE.md).
 
 ## Contenu
 
 Les fichiers sont publiés dans les [releases](https://github.com/LityTech27/LityOS-Components/releases) :
 
 - les APK de préversion `main-<sha7>` (canal preview) ;
-- le runtime Linux `lityos-r1-rcN` (Ubuntu arm64 et bureau KDE Plasma) ;
-- les packs complémentaires (`pack-<nom>-<hash>`) ;
+- le runtime Linux `lityos-r1-rcN` (Ubuntu arm64 et bureau KDE Plasma) ; seule la release `lityos-r1-rc5` est publique ;
+- les packs complémentaires (`pack-<nom>-<hash>`) : proot, directaudio, tracking et butler ;
 - le pilote Turnip (`driver-turnip-v…`) ;
+- le miroir de dépendances de build msitools (paquets gcab et cabextract) ;
 - `catalog.json`, le catalogue que l'application lit pour connaître les versions disponibles.
 
 ## Pourquoi ce dépôt est public
@@ -22,8 +23,25 @@ Ce fichier est généré par la CI de LityOS. Ne le modifiez pas à la main : vo
 
 ## Vérifier un téléchargement
 
-- Chaque release contient un fichier `SHA256SUMS.txt` : comparez la somme SHA-256 du fichier téléchargé avec celle qui y figure (`sha256sum -c SHA256SUMS.txt`).
-- Les notes d'une release d'APK indiquent l'empreinte du certificat de signature (ligne `Signer:`) ; comparez-la avec celle du certificat de l'APK.
+**Intégrité** (le fichier n'est pas corrompu) :
+
+- les releases d'APK `main-*` et le pilote Turnip contiennent un fichier `SHA256SUMS.txt` (`sha256sum -c SHA256SUMS.txt`) ;
+- le runtime `lityos-r1-rcN` contient des fichiers `.sha256` ;
+- pour les packs et le miroir msitools, la somme SHA-256 est indiquée dans les notes de la release.
+
+**Authenticité des APK** : ces sommes et ces notes viennent du même dépôt que les fichiers ; elles prouvent l'intégrité, pas l'authenticité. Pour vérifier qu'un APK est signé par LityOS, comparez l'empreinte SHA-256 du certificat de signature avec celle-ci (également donnée dans les notes des releases `main-*`, ligne `Signer:`, et dans `catalog.json`) :
+
+```
+a768efdbe5be84fffc1bbc1b428ae2f0432ddaaf4d47ffa2cf896828a2b91ff1
+```
+
+Avec l'outil `apksigner` du SDK Android :
+
+```
+apksigner verify --print-certs -v LityOS-main-<sha7>.apk
+```
+
+Lisez le certificat du signataire du schéma v3 (Android 9 et plus). À vérifier : l'affichage exact d'`apksigner` sur un APK publié n'a pas été testé ici ; les anciens schémas v1/v2 peuvent faire apparaître une autre clé.
 
 ## Licences
 
@@ -36,7 +54,7 @@ Où obtenir le code source correspondant à chaque release : voir [SOURCE.md](SO
 
 ## Marques
 
-Les marques appartiennent à leurs propriétaires. LityOS n'est ni affilié ni approuvé par Canonical, Mozilla, Microsoft, GOG ou itch.io.
+Les marques appartiennent à leurs propriétaires. LityOS n'est ni affilié ni approuvé par Canonical, Mozilla, Google, KDE ou itch.io.
 
 ## Signaler un problème
 
