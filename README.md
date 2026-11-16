@@ -27,7 +27,7 @@ Ce fichier est généré par la CI de LityOS. Ne le modifiez pas à la main : vo
 
 - les releases d'APK `main-*` et le pilote Turnip contiennent un fichier `SHA256SUMS.txt` (`sha256sum -c SHA256SUMS.txt`) ;
 - le runtime `lityos-r1-rcN` contient des fichiers `.sha256` ;
-- pour les packs et le miroir msitools, la somme SHA-256 est indiquée dans les notes de la release.
+- pour les packs, la somme SHA-256 est indiquée dans les notes de la release.
 
 **Authenticité des APK** : ces sommes et ces notes viennent du même dépôt que les fichiers ; elles prouvent l'intégrité, pas l'authenticité. Pour vérifier qu'un APK est signé par LityOS, comparez l'empreinte SHA-256 du certificat de signature avec celle-ci (également donnée dans les notes des releases `main-*`, ligne `Signer:`, et dans `catalog.json`) :
 
@@ -35,13 +35,13 @@ Ce fichier est généré par la CI de LityOS. Ne le modifiez pas à la main : vo
 a768efdbe5be84fffc1bbc1b428ae2f0432ddaaf4d47ffa2cf896828a2b91ff1
 ```
 
-Avec l'outil `apksigner` du SDK Android :
+Cette empreinte est publiée dans ce même dépôt : une source indépendante serait préférable. Avec l'outil `apksigner` du SDK Android :
 
 ```
 apksigner verify --print-certs -v LityOS-main-<sha7>.apk
 ```
 
-Lisez le certificat du signataire du schéma v3 (Android 9 et plus). À vérifier : l'affichage exact d'`apksigner` sur un APK publié n'a pas été testé ici ; les anciens schémas v1/v2 peuvent faire apparaître une autre clé.
+Le signataire du schéma v3 doit correspondre à l'empreinte ci-dessus.
 
 ## Licences
 
@@ -54,7 +54,7 @@ Où obtenir le code source correspondant à chaque release : voir [SOURCE.md](SO
 
 ## Marques
 
-Les marques appartiennent à leurs propriétaires. LityOS n'est ni affilié ni approuvé par Canonical, Mozilla, Google, KDE ou itch.io.
+Les marques appartiennent à leurs propriétaires. LityOS n'est ni affilié ni approuvé par Canonical, Mozilla, Google, KDE ou itch.io. Valve, Steam, Proton, RayNeo, VITURE, XREAL, Rokid, REDMAGIC et Nintendo sont des marques de leurs propriétaires respectifs.
 
 ## Signaler un problème
 
