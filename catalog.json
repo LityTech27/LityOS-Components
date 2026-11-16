@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "repo": "LityTech27/LityOS-Components",
-  "generatedAt": 1794602775738,
+  "generatedAt": 1794834943457,
   "stable": null,
   "preview": {
     "tag": "main-6b33b8e",
@@ -31,60 +31,6 @@
       "title": "Konsole : profil par d\u00e9faut LityOS",
       "summary": "Konsole affichait \u00ab Could not find '' \u00bb : konsolerc sans DefaultProfile et aucun .profile. lityos-desktop-branding cr\u00e9e LityOS.profile (/bin/bash) et pose DefaultProfile si absent, sans \u00e9craser l'existant. Test Python : testkonsoleprofile.py (4 OK en local). Pas de Kotlin touch\u00e9.",
       "publishedAt": 1794602760000
-    },
-    {
-      "commit": "18dfbe381dcb48737062594745f1e9f63c77278a",
-      "title": "\u00c9chelle auto : plancher de largeur utile (L 640, minimum 600) [skip ci]",
-      "summary": "Le facteur auto donnait 1,99 sur 1080 px (~543 px logiques, ~490 utiles apr\u00e8s le rail de 52) : applis rogn\u00e9es \u00e0 droite en portrait.",
-      "publishedAt": 1794579000000
-    },
-    {
-      "commit": "f52a78fa3977d3fef92e02f343ceb819cde502c1",
-      "title": "D\u00e9coration de fen\u00eatre LityOS : pilule iPadOS en QML KWin, livr\u00e9e sans activation [skip ci]",
-      "summary": "\u00c9tape 2 du plan des fen\u00eatres style iPadOS. [skip ci]",
-      "publishedAt": 1794574570000
-    },
-    {
-      "commit": "3d76d50fa10b74640f44d957dbc0c4373f9061f7",
-      "title": "Rail : une seule ic\u00f4ne Param\u00e8tres (fen\u00eatre kdesystemsettings)",
-      "summary": "La fen\u00eatre kdesystemsettings (\u00ab Quick Settings \u2014 System Settings \u00bb) \u00e9tait list\u00e9e en entr\u00e9e suppl\u00e9mentaire : son entr\u00e9e .desktop jumelle kdesystemsettings n'avait pas la m\u00eame cl\u00e9 que le favori systemsettings. Bridge.canon ram\u00e8ne d\u00e9sormais kdesystemsettings (et kcmshell/kinfocenter) \u00e0 la m\u00eame cl\u00e9. La source de la fen\u00eatre n'est pas dans ce d\u00e9p\u00f4t (aucun tile/autostart ne",
-      "publishedAt": 1794569316000
-    },
-    {
-      "commit": "35636791a2106f01dc3a9888d3b54c640ae77052",
-      "title": "Fix StateLayer : propri\u00e9t\u00e9 long r\u00e9serv\u00e9e, le shell ne charge plus [skip ci]",
-      "summary": "[skip ci]",
-      "publishedAt": 1794516070000
-    },
-    {
-      "commit": "1c1e4b0bebc9befd7d286ed9d7080ab9080f9bca",
-      "title": "Corrige WindowGestureTest.theWindowOnTopHidesTheStripBelowIt [skip ci]",
-      "summary": "[skip ci]",
-      "publishedAt": 1794513340000
-    },
-    {
-      "commit": "eee7232e167d59e1f736a05e0172c2849e1563d5",
-      "title": "Rail : identit\u00e9 canonique, plus d'ic\u00f4ne en double [skip ci]",
-      "summary": "[skip ci]",
-      "publishedAt": 1794433606000
-    },
-    {
-      "commit": "da2ade43c008b246b99dc46478baacdfa2e8b7af",
-      "title": "CI: fail over across Ubuntu mirrors for apt [skip ci]",
-      "summary": "[skip ci]",
-      "publishedAt": 1794416937000
-    },
-    {
-      "commit": "b940f43fcde2af267f83f8aad8cdf9c429cf47b0",
-      "title": "[skip ci] LityOS shell: real volume/brightness controls, speaker opens sound panel, Plasma OSD off",
-      "summary": "[skip ci] Real device controls: speaker icon, brightness, volume, Plasma OSD.",
-      "publishedAt": 1794401324000
-    },
-    {
-      "commit": "ccc397ddff06a1831c06f2b52af6babab9f90113",
-      "title": "LityOS shell: fix flaky OSD restore after a crash",
-      "summary": "Root cause: lityos-shell stop runs osdrestore while the running shell's TERM trap runs it too. Both read the marker and wrote plasmaparc concurrently, so the config could end up empty (CI run 42991478682, testosdnextstartafteracrashkeepstheoriginalvalues).",
-      "publishedAt": 1794392156000
     }
   ],
   "tests": [],
