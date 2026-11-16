@@ -15,8 +15,8 @@ Les mentions « à confirmer » signalent une information non vérifiée à ce j
 | Firefox | 159.0.1 | `MPL-2.0` |
 | proot / talloc | commit `4dba3afb…` / 2.4.3 | `GPL-2.0-or-later` / `LGPL-3.0-or-later` |
 | directaudio | `directaudio-linux-v1.1.0` | `LGPL-2.1-or-later` |
-| OpenCV / MediaPipe / modèles Google | 4.13.0 / 1.0.0 | `Apache-2.0` (modèles : à confirmer) |
-| butler / 7-Zip (c7zip) | 15.32.0 / à confirmer | `MIT` / GNU LGPL (version à confirmer) avec restriction unRAR et parties BSD |
+| OpenCV / MediaPipe / modèles Google | 4.13.0 / 1.0.0 | `Apache-2.0` |
+| butler / 7-Zip (c7zip) | 15.32.0 / à confirmer | `MIT` / LGPL-2.1-or-later avec restriction unRAR et parties BSD |
 | msitools : gcab / cabextract | 1.6 / 1.11 | `LGPL-2.1-or-later` / `GPL-3.0-or-later` |
 
 ## LityOS
@@ -25,9 +25,9 @@ Les mentions « à confirmer » signalent une information non vérifiée à ce j
 - Dérivé de **DroidDeck 0.6.9** (projet [Droid-Deck/DroidDeck](https://github.com/Droid-Deck/DroidDeck), GPL-3.0), commit de départ `0a07926ef3477c90db911d169904137cfc5e2505`.
 - Le dépôt de développement de LityOS n'est pas public ; la source correspondante à chaque release est décrite dans [SOURCE.md](SOURCE.md).
 
-### Bibliothèques et code adapté dans LityOS
+### Bibliothèques et code adapté dans LityOS (liste non exhaustive)
 
-Ces mentions reprennent les fichiers d'attribution de LityOS (`docs/third-party/`). La présence exacte de chaque élément dans chaque APK est à confirmer ; les textes de licence complets sont dans l'archive de source.
+Ces mentions reprennent les fichiers d'attribution de LityOS ; le complément sera repris avec ces fichiers dans l'archive de source LityOS.
 
 | Élément | Auteur / amont | Licence |
 | --- | --- | --- |
@@ -41,6 +41,10 @@ Ces mentions reprennent les fichiers d'attribution de LityOS (`docs/third-party/
 | Protocole VITURE V2 (adapté) | Holger Bartnick, © 2026, [elasticjava/viture-v2](https://github.com/elasticjava/viture-v2) | MIT |
 | libusb 1.0.30 (caméra USB, optionnel) | [libusb](https://github.com/libusb/libusb) | LGPL-2.1-or-later |
 | libuvc 0.0.8 (caméra USB, optionnel) | Ken Tossell, [libuvc](https://github.com/libuvc/libuvc) | BSD-3-Clause |
+| adrenotools et linkernsbypass | © 2021 Billy Laws | BSD-2-Clause |
+| lsfg (génération d'images) | Eden Emulator Project, lsfg-vk | GPL-3.0-or-later |
+| pulseaudio, libsndfile, libffi, libltdl, libwayland (bibliothèques natives de l'APK) | projets amont respectifs | LGPL ou MIT selon le composant : à confirmer |
+| DLL Wine (composants de l'APK) | projet Wine | LGPL-2.1 (à confirmer) |
 
 Les autres crédits hérités de DroidDeck (par exemple WinNative, FEX, Wine, Proton) figurent dans la section « Credits and licence » du [README de DroidDeck](https://github.com/Droid-Deck/DroidDeck#credits-and-licence) ; leur inventaire complet pour cette distribution est à confirmer.
 
@@ -53,7 +57,7 @@ Les autres crédits hérités de DroidDeck (par exemple WinNative, FEX, Wine, Pr
 ## Ubuntu 26.04 (runtime arm64) et Kubuntu / KDE Plasma (bureau)
 
 - Projet amont : [Ubuntu](https://ubuntu.com/) (Canonical Ltd) et ses paquets ; bureau Kubuntu / KDE Plasma 6.6.x.
-- Licences : celles de chaque paquet (GPL, LGPL, MIT, BSD, etc.), dont le texte est dans `/usr/share/doc/<paquet>/copyright` de l'image.
+- Licences : celles de chaque paquet (GPL, LGPL, MIT, BSD, etc.), dont le texte est normalement dans `/usr/share/doc/<paquet>/copyright` de l'image (à confirmer).
 - Liste exacte des paquets et versions : fichiers `*.packages.txt` joints aux releases `lityos-r1-rcN`.
 - Source : archive Ubuntu, <https://archive.ubuntu.com/ubuntu/> (par exemple `apt source <paquet>`).
 - Composants notables du bureau, présents dans `lityos-r1-rc5-desktop.packages.txt` : codecs et lecteurs (`ffmpeg` 7:8.0.1-3ubuntu2, `vlc-*` 3.0.23-1, `gstreamer1.0-plugins-ugly` 1.28.2-1, `libx264`, `libx265`) sous licences GPL/LGPL, pour lesquels des brevets peuvent s'appliquer selon les pays ; `fonts-ubuntu` 0.869+git20240321-0ubuntu2 sous Ubuntu Font Licence ; `unrar-free` 1:0.3.3-1build1 (GPL).
@@ -65,7 +69,7 @@ Paquets source Ubuntu recompilés avec des correctifs LityOS ; la source de ces 
 
 | Paquet | Version | Licence (SPDX) | Source amont |
 | --- | --- | --- | --- |
-| KWin | 6.6.6 | [`GPL-2.0-or-later`](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html) | <https://invent.kde.org/plasma/kwin> et archive Ubuntu |
+| KWin | 6.6.6 | [`GPL-2.0-or-later`](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html) | <https://invent.kde.org/plasma/kwin> (miroir : <https://github.com/KDE/kwin>) et archive Ubuntu |
 | Mesa | 26.0.8 | [`MIT`](https://spdx.org/licenses/MIT.html) et autres licences listées dans `debian/copyright` | <https://www.mesa3d.org/> et archive Ubuntu |
 | Quickshell | 0.3.0 (`0.3.0-1build1+lityos1`, runtime rc5) | [LGPL-3.0](https://www.gnu.org/licenses/lgpl-3.0.html) (variante à confirmer) | [quickshell-mirror/quickshell](https://github.com/quickshell-mirror/quickshell) et paquet source Ubuntu |
 
@@ -90,17 +94,17 @@ Paquets source Ubuntu recompilés avec des correctifs LityOS ; la source de ces 
 
 - **OpenCV 4.13.0** : [opencv/opencv](https://github.com/opencv/opencv), `Apache-2.0`.
 - **MediaPipe tasks 1.0.0** (Google) : [google-ai-edge/mediapipe](https://github.com/google-ai-edge/mediapipe), `Apache-2.0`.
-- **Modèles Google** (`hand_landmarker.task`, `pose_landmarker_lite.task`, `hand_landmarker_lite.task`) : **licence à confirmer** (Apache-2.0 attendue, non vérifiée). Le modèle `hand_landmarker_lite.task` est assemblé par LityOS à partir d'actifs Google (modifié par rapport aux modèles d'origine).
+- **Modèles Google** (`hand_landmarker.task`, `pose_landmarker_lite.task`, `hand_landmarker_lite.task`) : `Apache-2.0` d'après les fiches de modèle ([BlazePose GHUM 3D](https://storage.googleapis.com/mediapipe-assets/Model%20Card%20BlazePose%20GHUM%203D.pdf), [Hand Tracking](https://storage.googleapis.com/mediapipe-assets/Model%20Card%20Hand%20Tracking%20%28Lite_Full%29%20with%20Fairness%20Oct%202021.pdf)). Le modèle `hand_landmarker_lite.task` est assemblé par LityOS à partir d'actifs Google (modifié par rapport aux modèles d'origine).
 - Texte de la licence : <https://www.apache.org/licenses/LICENSE-2.0>.
 
 ## butler et 7-Zip (pack `butler`)
 
 - **butler 15.32.0** : projet [itchio/butler](https://github.com/itchio/butler) (itch.io), licence [`MIT`](https://spdx.org/licenses/MIT.html).
-- **7-Zip / c7zip** (`7z.so`, `libc7zip.so`) : projet [7-Zip](https://www.7-zip.org/) d'Igor Pavlov. Licence : GNU LGPL (version à confirmer), avec restriction unRAR et parties sous BSD 2 clauses et 3 clauses, voir <https://www.7-zip.org/license.txt>. Pour la redistribution binaire, les mentions de licence de ce fichier doivent être reproduites. Version à confirmer.
+- **7-Zip / c7zip** (`7z.so`, `libc7zip.so`) : projet [7-Zip](https://www.7-zip.org/) d'Igor Pavlov. Licence : GNU LGPL version 2.1 ou ultérieure, avec restriction unRAR et parties sous BSD 2 clauses et 3 clauses, d'après <https://www.7-zip.org/license.txt>. Pour la redistribution binaire, les mentions de licence de ce fichier doivent être reproduites. Version embarquée à confirmer.
 
 ## msitools (miroir `build-dependency-msitools`)
 
 Paquets Arch Linux ARM ([archlinuxarm/PKGBUILDs](https://github.com/archlinuxarm/PKGBUILDs)), copie d'une release DroidDeck.
 
-- **gcab 1.6** : `LGPL-2.1-or-later` ([texte](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html)).
-- **cabextract 1.11** : `GPL-3.0-or-later` ([texte](https://www.gnu.org/licenses/gpl-3.0.html)).
+- **gcab 1.6** ([GNOME/gcab](https://gitlab.gnome.org/GNOME/gcab)) : `LGPL-2.1-or-later` ([texte](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html)).
+- **cabextract 1.11** ([cabextract.org.uk](https://www.cabextract.org.uk)) : `GPL-3.0-or-later` ([texte](https://www.gnu.org/licenses/gpl-3.0.html)).
