@@ -1,24 +1,24 @@
 {
   "schema": 1,
   "repo": "LityTech27/LityOS-Components",
-  "generatedAt": 1794998124818,
+  "generatedAt": 1795011122346,
   "stable": null,
   "preview": {
-    "tag": "main-efe43b8",
-    "title": "refactor: retirer gamescope et mangoapp h\u00e9rit\u00e9s de DroidDeck (PR 3/3)",
-    "summary": "PR 3 du nettoyage des restes DroidDeck : gamescope et mangoapp (MangoHud).",
-    "commit": "efe43b80a22a2b21c2ba34deb01f73b9e57b6242",
+    "tag": "main-e7b0630",
+    "title": "feat(shell): dock d'applis en bas pour la tablette et le PC",
+    "summary": "Barre d'applis en bas, comme les maquettes bureau-paysage- et bureau-portrait-, dans tous les modes (classique, tablette, t\u00e9l\u00e9phone, portrait et paysage) : pilule de la couleur du cadre, applis \u00e9pingl\u00e9es et ouvertes, pastille sous les applis ouvertes (allong\u00e9e pour l'appli active), bouton grille qui ouvre/ferme le lanceur du bas.",
+    "commit": "e7b06308202b462c6c54ccc676d57120803c8bda",
     "pr": 0,
     "version": null,
     "versionCode": 21,
-    "publishedAt": 1794998109000,
-    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-efe43b8",
+    "publishedAt": 1795011105000,
+    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-e7b0630",
     "apks": {
       "lity.os": {
-        "name": "LityOS-main-efe43b8.apk",
-        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-efe43b8/LityOS-main-efe43b8.apk",
-        "size": 51856913,
-        "sha256": "5c5c52679d84297059ea614c5a186a45976bf88da2118a26bfa729561c40d135",
+        "name": "LityOS-main-e7b0630.apk",
+        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-e7b0630/LityOS-main-e7b0630.apk",
+        "size": 51869498,
+        "sha256": "a0da6e633a1fd19291bcb5928db8873d12b478f2e147a50351f8cc090c3607cb",
         "packageName": "lity.os",
         "versionCode": 21,
         "signerSha256": "a768efdbe5be84fffc1bbc1b428ae2f0432ddaaf4d47ffa2cf896828a2b91ff1"
@@ -26,6 +26,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "e7b06308202b462c6c54ccc676d57120803c8bda",
+      "title": "feat(shell): dock d'applis en bas pour la tablette et le PC",
+      "summary": "Barre d'applis en bas, comme les maquettes bureau-paysage- et bureau-portrait-, dans tous les modes (classique, tablette, t\u00e9l\u00e9phone, portrait et paysage) : pilule de la couleur du cadre, applis \u00e9pingl\u00e9es et ouvertes, pastille sous les applis ouvertes (allong\u00e9e pour l'appli active), bouton grille qui ouvre/ferme le lanceur du bas.",
+      "publishedAt": 1795011105000
+    },
     {
       "commit": "efe43b80a22a2b21c2ba34deb01f73b9e57b6242",
       "title": "refactor: retirer gamescope et mangoapp h\u00e9rit\u00e9s de DroidDeck (PR 3/3)",
