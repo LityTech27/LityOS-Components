@@ -1,31 +1,37 @@
 {
   "schema": 1,
   "repo": "LityTech27/LityOS-Components",
-  "generatedAt": 1794834943457,
+  "generatedAt": 1794998124818,
   "stable": null,
   "preview": {
-    "tag": "main-6b33b8e",
-    "title": "Konsole : profil par d\u00e9faut LityOS",
-    "summary": "Konsole affichait \u00ab Could not find '' \u00bb : konsolerc sans DefaultProfile et aucun .profile. lityos-desktop-branding cr\u00e9e LityOS.profile (/bin/bash) et pose DefaultProfile si absent, sans \u00e9craser l'existant. Test Python : testkonsoleprofile.py (4 OK en local). Pas de Kotlin touch\u00e9.",
-    "commit": "6b33b8e74694893e0c00dd87a9b51e4358f40aa2",
+    "tag": "main-efe43b8",
+    "title": "refactor: retirer gamescope et mangoapp h\u00e9rit\u00e9s de DroidDeck (PR 3/3)",
+    "summary": "PR 3 du nettoyage des restes DroidDeck : gamescope et mangoapp (MangoHud).",
+    "commit": "efe43b80a22a2b21c2ba34deb01f73b9e57b6242",
     "pr": 0,
     "version": null,
-    "versionCode": 20,
-    "publishedAt": 1794602760000,
-    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-6b33b8e",
+    "versionCode": 21,
+    "publishedAt": 1794998109000,
+    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-efe43b8",
     "apks": {
       "lity.os": {
-        "name": "LityOS-main-6b33b8e.apk",
-        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-6b33b8e/LityOS-main-6b33b8e.apk",
-        "size": 62241748,
-        "sha256": "dd6206ef02861cd26fa8e91ce770f766938272795ac74fcc172d26e016c6a8a3",
+        "name": "LityOS-main-efe43b8.apk",
+        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-efe43b8/LityOS-main-efe43b8.apk",
+        "size": 51856913,
+        "sha256": "5c5c52679d84297059ea614c5a186a45976bf88da2118a26bfa729561c40d135",
         "packageName": "lity.os",
-        "versionCode": 20,
+        "versionCode": 21,
         "signerSha256": "a768efdbe5be84fffc1bbc1b428ae2f0432ddaaf4d47ffa2cf896828a2b91ff1"
       }
     }
   },
   "recentPreviews": [
+    {
+      "commit": "efe43b80a22a2b21c2ba34deb01f73b9e57b6242",
+      "title": "refactor: retirer gamescope et mangoapp h\u00e9rit\u00e9s de DroidDeck (PR 3/3)",
+      "summary": "PR 3 du nettoyage des restes DroidDeck : gamescope et mangoapp (MangoHud).",
+      "publishedAt": 1794998109000
+    },
     {
       "commit": "6b33b8e74694893e0c00dd87a9b51e4358f40aa2",
       "title": "Konsole : profil par d\u00e9faut LityOS",
