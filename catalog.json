@@ -1,24 +1,24 @@
 {
   "schema": 1,
   "repo": "LityTech27/LityOS-Components",
-  "generatedAt": 1795015913931,
+  "generatedAt": 1795540693801,
   "stable": null,
   "preview": {
-    "tag": "main-03760bd",
-    "title": "fix(decoration): nom de th\u00e8me Aurorae LityOS",
-    "summary": "Aurorae 6.6.6 nomme un th\u00e8me QML par son identifiant KPackage (LityOS), sans pr\u00e9fixe (auroraesvg est r\u00e9serv\u00e9 aux th\u00e8mes SVG) ; avec l'ancien nom KWin retombait sur Plastik. lityos-desktop-mode \u00e9crit theme=LityOS (library inchang\u00e9e) et migre les entr\u00e9es d'\u00e9tat qui portent l'ancienne valeur. Tests mis \u00e0 jour + test de migration. Preuve : rapport de compatibilit\u00e9 (source auro",
-    "commit": "03760bd71ddb27643bff21c6db0e58037d68c110",
+    "tag": "main-ffa3725",
+    "title": "feat(desktop): d\u00e9coration LityOS par d\u00e9faut en bureau classique",
+    "summary": "La d\u00e9coration de fen\u00eatres LityOS (paquet KWin usr/share/kwin/decorations/LityOS) devient le choix par d\u00e9faut en bureau classique, comme d\u00e9j\u00e0 en tablette et en t\u00e9l\u00e9phone. Aucun fichier \u00e0 cr\u00e9er.",
+    "commit": "ffa37255ddc859ff9c6f8da9f215e5b99da52dfd",
     "pr": 0,
     "version": null,
     "versionCode": 21,
-    "publishedAt": 1795015901000,
-    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-03760bd",
+    "publishedAt": 1795540678000,
+    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-ffa3725",
     "apks": {
       "lity.os": {
-        "name": "LityOS-main-03760bd.apk",
-        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-03760bd/LityOS-main-03760bd.apk",
-        "size": 51865402,
-        "sha256": "721d9f303c4e0d96755929a0983a2b4d9dee8956c9a82b5d1a9c4213f27584e0",
+        "name": "LityOS-main-ffa3725.apk",
+        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-ffa3725/LityOS-main-ffa3725.apk",
+        "size": 52090903,
+        "sha256": "aa879db0ff9045f0bee6c53a05e6658db46ec2242d7104ebf46ce07e30827e56",
         "packageName": "lity.os",
         "versionCode": 21,
         "signerSha256": "a768efdbe5be84fffc1bbc1b428ae2f0432ddaaf4d47ffa2cf896828a2b91ff1"
@@ -26,6 +26,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "ffa37255ddc859ff9c6f8da9f215e5b99da52dfd",
+      "title": "feat(desktop): d\u00e9coration LityOS par d\u00e9faut en bureau classique",
+      "summary": "La d\u00e9coration de fen\u00eatres LityOS (paquet KWin usr/share/kwin/decorations/LityOS) devient le choix par d\u00e9faut en bureau classique, comme d\u00e9j\u00e0 en tablette et en t\u00e9l\u00e9phone. Aucun fichier \u00e0 cr\u00e9er.",
+      "publishedAt": 1795540678000
+    },
     {
       "commit": "03760bd71ddb27643bff21c6db0e58037d68c110",
       "title": "fix(decoration): nom de th\u00e8me Aurorae LityOS",
