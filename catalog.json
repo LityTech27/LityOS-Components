@@ -1,24 +1,24 @@
 {
   "schema": 1,
   "repo": "LityTech27/LityOS-Components",
-  "generatedAt": 1795540693801,
+  "generatedAt": 1795626622291,
   "stable": null,
   "preview": {
-    "tag": "main-ffa3725",
-    "title": "feat(desktop): d\u00e9coration LityOS par d\u00e9faut en bureau classique",
-    "summary": "La d\u00e9coration de fen\u00eatres LityOS (paquet KWin usr/share/kwin/decorations/LityOS) devient le choix par d\u00e9faut en bureau classique, comme d\u00e9j\u00e0 en tablette et en t\u00e9l\u00e9phone. Aucun fichier \u00e0 cr\u00e9er.",
-    "commit": "ffa37255ddc859ff9c6f8da9f215e5b99da52dfd",
+    "tag": "main-c20e913",
+    "title": "feat(apps): page Applis avec catalogue ferm\u00e9 (Firefox, Claude Code, Paseo bient\u00f4t)",
+    "summary": "Page \u00ab Applis \u00bb dans les R\u00e9glages (carte sur l'accueil) : un catalogue ferm\u00e9 de trois applis, sans d\u00e9p\u00f4t personnalis\u00e9 ni AddAppDialog.",
+    "commit": "c20e913655719a13b4ed645a3abfdb8ed1347d67",
     "pr": 0,
     "version": null,
     "versionCode": 21,
-    "publishedAt": 1795540678000,
-    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-ffa3725",
+    "publishedAt": 1795626608000,
+    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-c20e913",
     "apks": {
       "lity.os": {
-        "name": "LityOS-main-ffa3725.apk",
-        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-ffa3725/LityOS-main-ffa3725.apk",
-        "size": 52090903,
-        "sha256": "aa879db0ff9045f0bee6c53a05e6658db46ec2242d7104ebf46ce07e30827e56",
+        "name": "LityOS-main-c20e913.apk",
+        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-c20e913/LityOS-main-c20e913.apk",
+        "size": 52123960,
+        "sha256": "7285b96f469a5c66b72aef77726e9a120245d529a3510f8360ae60189c31774b",
         "packageName": "lity.os",
         "versionCode": 21,
         "signerSha256": "a768efdbe5be84fffc1bbc1b428ae2f0432ddaaf4d47ffa2cf896828a2b91ff1"
@@ -26,6 +26,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "c20e913655719a13b4ed645a3abfdb8ed1347d67",
+      "title": "feat(apps): page Applis avec catalogue ferm\u00e9 (Firefox, Claude Code, Paseo bient\u00f4t)",
+      "summary": "Page \u00ab Applis \u00bb dans les R\u00e9glages (carte sur l'accueil) : un catalogue ferm\u00e9 de trois applis, sans d\u00e9p\u00f4t personnalis\u00e9 ni AddAppDialog.",
+      "publishedAt": 1795626608000
+    },
     {
       "commit": "ffa37255ddc859ff9c6f8da9f215e5b99da52dfd",
       "title": "feat(desktop): d\u00e9coration LityOS par d\u00e9faut en bureau classique",
