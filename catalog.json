@@ -1,24 +1,24 @@
 {
   "schema": 1,
   "repo": "LityTech27/LityOS-Components",
-  "generatedAt": 1795626622291,
+  "generatedAt": 1795718790917,
   "stable": null,
   "preview": {
-    "tag": "main-c20e913",
-    "title": "feat(apps): page Applis avec catalogue ferm\u00e9 (Firefox, Claude Code, Paseo bient\u00f4t)",
-    "summary": "Page \u00ab Applis \u00bb dans les R\u00e9glages (carte sur l'accueil) : un catalogue ferm\u00e9 de trois applis, sans d\u00e9p\u00f4t personnalis\u00e9 ni AddAppDialog.",
-    "commit": "c20e913655719a13b4ed645a3abfdb8ed1347d67",
+    "tag": "main-12ece12",
+    "title": "fix(desktop): fen\u00eatres tactiles (petites, d\u00e9pla\u00e7ables, redimensionnables) et retrait des gestes propres \u00e0 LityOS",
+    "summary": "| Sympt\u00f4me | Cause | Statut |\n|---|---|---|\n| Les applis s'ouvrent agrandies | lityos-desktop-mode, r\u00e8gle lityos-phone : maximizehorizrule=2 / maximizevertrule=2 (forc\u00e9). render-probe.log : mode=phone. | Prouv\u00e9 |\n| Maintenir la barre puis glisser ne d\u00e9place pas | DirectTouchHold.kt : apr\u00e8s le d\u00e9lai d'appui long, un clic droit part, puis if (held) return true avale tous les mouvements. | Prouv\u00e9 dans le code |\n| Idem | Une fen\u00eatre \u00e0 maximisation forc\u00e9e n'est pas d\u00e9pla\u00e7able durablement par KWin. | Suppos\u00e9 |\n| Barre et boutons trop petits | render-probe.log : Scale: 1 c\u00f4t\u00e9 KWin, session.log : ui scale 1.68. Sur la capture, les disques font environ 34 px. | Prouv\u00e9 |",
+    "commit": "12ece12a504107ec080ae297ac5af4c93c362c3d",
     "pr": 0,
     "version": null,
     "versionCode": 21,
-    "publishedAt": 1795626608000,
-    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-c20e913",
+    "publishedAt": 1795718778000,
+    "url": "https://github.com/LityTech27/LityOS-Components/releases/tag/main-12ece12",
     "apks": {
       "lity.os": {
-        "name": "LityOS-main-c20e913.apk",
-        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-c20e913/LityOS-main-c20e913.apk",
-        "size": 52123960,
-        "sha256": "7285b96f469a5c66b72aef77726e9a120245d529a3510f8360ae60189c31774b",
+        "name": "LityOS-main-12ece12.apk",
+        "url": "https://github.com/LityTech27/LityOS-Components/releases/download/main-12ece12/LityOS-main-12ece12.apk",
+        "size": 52115890,
+        "sha256": "63543d15430f19ac57168f289bfd1703c78a9bd8f3666db10bb6a490987d8fe9",
         "packageName": "lity.os",
         "versionCode": 21,
         "signerSha256": "a768efdbe5be84fffc1bbc1b428ae2f0432ddaaf4d47ffa2cf896828a2b91ff1"
@@ -26,6 +26,12 @@
     }
   },
   "recentPreviews": [
+    {
+      "commit": "12ece12a504107ec080ae297ac5af4c93c362c3d",
+      "title": "fix(desktop): fen\u00eatres tactiles (petites, d\u00e9pla\u00e7ables, redimensionnables) et retrait des gestes propres \u00e0 LityOS",
+      "summary": "| Sympt\u00f4me | Cause | Statut |\n|---|---|---|\n| Les applis s'ouvrent agrandies | lityos-desktop-mode, r\u00e8gle lityos-phone : maximizehorizrule=2 / maximizevertrule=2 (forc\u00e9). render-probe.log : mode=phone. | Prouv\u00e9 |\n| Maintenir la barre puis glisser ne d\u00e9place pas | DirectTouchHold.kt : apr\u00e8s le d\u00e9lai d'appui long, un clic droit part, puis if (held) return true avale tous les mouvements. | Prouv\u00e9 dan",
+      "publishedAt": 1795718778000
+    },
     {
       "commit": "c20e913655719a13b4ed645a3abfdb8ed1347d67",
       "title": "feat(apps): page Applis avec catalogue ferm\u00e9 (Firefox, Claude Code, Paseo bient\u00f4t)",
